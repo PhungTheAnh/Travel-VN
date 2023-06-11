@@ -19,7 +19,7 @@ export default function RootLayout({
     <body className={inter.className + ' mx-auto'}>
       <Header/>
       {children}
-      <h1 className="uppercase">footer</h1>
+      {/*<h1 className="uppercase">footer</h1>*/}
     </body>
     </html>
   );
