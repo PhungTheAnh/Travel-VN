@@ -6,7 +6,7 @@ import {FaEye} from "react-icons/fa";
 import {IoIosShareAlt} from "react-icons/io";
 import {BsArrowRight} from "react-icons/bs";
 import Image from "next/image";
-import {AiFillStar} from "react-icons/ai";
+import {AiFillStar, AiOutlineShoppingCart} from "react-icons/ai";
 import {CiTimer} from "react-icons/ci";
 
 const Tours = (props: any) => {
@@ -14,7 +14,7 @@ const Tours = (props: any) => {
   return (
     <div
       className={"tours slick translate-y-[160px] opacity-1 transition-all duration-[800ms] w-full rounded-xl" + tours || ""}>
-      <div className="bg-white shadow-lg p-[15px] rounded-xl w-[400px]">
+      <div className="bg-white shadow-lg p-[15px] rounded-xl w-[400px] relative">
         <Image src="/tours/codohue3 (1).jpg" alt={"Cố Đô Huế"} width={0}
                height={0}
                sizes="100vw"
@@ -43,7 +43,8 @@ const Tours = (props: any) => {
           <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span className="underline">đ</span> </p>
         </div>
         <div className="btn_order absolute right-0 bottom-0">
-
+          <p className="text-white text-base font-[300] transition-all duration-300">Đặt Tour ngay</p>
+          <AiOutlineShoppingCart size={16} color={"white"} />
         </div>
       </div>
     </div>
