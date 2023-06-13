@@ -61,10 +61,12 @@
     visibility: visible;
     left: 0;
 }
+
 /*scrollbar*/
 
 body::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -75,33 +77,189 @@ body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
 }
 
-.title-active{
+/**/
+
+.title-active {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.main-active{
+.evaluate-title-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.evaluate-slide-active {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.places > div{
+.main-active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.places > div {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 /*Tour*/
-.tours > div{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.tours .slick-slide {
+    border-radius: 12px;
+    box-shadow: 0px 5px 30px #00000020;
 }
 
-.btn_order{
+.btn_order {
     overflow: hidden;
     background: linear-gradient(90deg, #4366c5, #88a9e0);
     transition: all 0.3s linear;
 }
 
+/* slider*/
+
+
+
+.tours .slick-track{
+    display: flex !important;
+    justify-content: space-around;
+}
+
+.tours .slick-slider .slick-track, .slick-slider .slick-list, .evaluate .slick-slider .slick-track, .slick-slider .slick-list{
+    transition: ease-in-out all 0.3s;
+}
+
+.tours .slick-slide:not(.slick-center){
+    scale: 0.85;
+    transition: all 0.5s ease-in-out;
+}
+
+.tours .slick-center{
+    transition: all 0.5s ease-in-out;
+    scale: 1;
+}
+
+
+.tours .slick-next, .posts .slick-next {
+    z-index: 90;
+    right: -50px !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.tours .slick-prev, .posts .slick-prev {
+    z-index: 90;
+    left: -50px !important;
+    height: auto !important;
+    width: auto !important;
+}
+.tours .slick-dots li.slick-active button:before, .evaluate .slick-dots li.slick-active button:before, .posts .slick-dots li.slick-active button:before {
+    font-size: 7px;
+    opacity: 1;
+    color: #4366c5 !important;
+}
+.evaluate .slick-dots li button:before{
+    opacity: 1;
+    color: white;
+    font-size: 7px;
+}
+/* posts */
+.posts .group{
+    box-shadow: 0px 20px 20px #00000020;
+}
+
+.posts .group:hover{
+    box-shadow: 0px 20px 20px #00000066;
+}
+.posts .slick-track{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.posts .slick-slide{
+    margin: 0 15px;
+}
+
+.posts .slick-list{
+    margin: 0 -15px;
+    padding: 30px 0 50px !important;
+}
+/* partner */
+
+.partners .slick-track{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .slick-slide{
+    margin: 0 25px !important;
+}
+
+@media screen and (min-width: 768px){
+    .tours .slick-slide {
+        border-radius: 12px !important;
+        width: 388px !important;
+    }
+}
 @media screen and (max-width: 1536px) {
     .places .group:nth-last-child(1), .places .group:nth-last-child(2) {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .tours .slick-slide {
+        width: 340px !important;
+    }
+
+    .tours .slick-slide:not(.slick-center){
+        scale: 0.85;
+    }
+
+    .tours .slick-center{
+        scale: 0.95;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .tours .slick-slide {
+        width: 310px !important;
+    }
+
+    .tours .slick-slide:not(.slick-center){
+        scale: 0.82;
+    }
+
+    .tours .slick-center{
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .tours .slick-slide:not(.slick-center){
+        scale: 1;
+    }
+
+    .tours .slick-center{
+        scale: 1;
+    }
+    .tours .slick-track{
+        justify-content: space-between;
+    }
+
+    .tours .slick-next {
+        right: 0px !important;
+        background: white !important;
+        border-radius: 5px;
+        box-shadow: 5px 0px 10px #00000033;
+    }
+
+    .tours .slick-prev {
+        left: 0px !important;
+        background: white !important;
+        border-radius: 5px;
+        box-shadow: -5px 0px 10px #00000033;
     }
 }
 
@@ -112,6 +270,12 @@ body::-webkit-scrollbar-thumb {
 
     .places div:nth-child(0) {
         grid-row: span 1 / span 1;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .evaluate-main{
+        width: 90%;
     }
 }
 
