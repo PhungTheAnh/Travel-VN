@@ -11,6 +11,7 @@ import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import findPosition from "@/app/component/function/findPosition";
 import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
+import Link from "next/link";
 
 const Tours = () => {
   const tourTitleRef = useRef<HTMLInputElement | null>(null);
@@ -83,8 +84,8 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <a href=""><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
-              Thiên Mụ</p></a>
+            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+              Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
               <p className='text-sm text-[#adadad]'>3 Ngày</p>
@@ -127,8 +128,8 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <a href=""><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
-              Thiên Mụ</p></a>
+            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+              Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
               <p className='text-sm text-[#adadad]'>3 Ngày</p>
@@ -171,8 +172,8 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <a href=""><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
-              Thiên Mụ</p></a>
+            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+              Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
               <p className='text-sm text-[#adadad]'>3 Ngày</p>
@@ -215,8 +216,8 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <a href=""><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
-              Thiên Mụ</p></a>
+            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+              Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
               <p className='text-sm text-[#adadad]'>3 Ngày</p>
@@ -259,8 +260,8 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <a href=""><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
-              Thiên Mụ</p></a>
+            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+              Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
               <p className='text-sm text-[#adadad]'>3 Ngày</p>

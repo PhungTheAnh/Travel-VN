@@ -1,14 +1,12 @@
 'use client'
 
-import {FiChevronRight} from "react-icons/fi";
-import Places from "@/app/component/places/page";
-import React, {useEffect, useRef, useState} from "react";
-import Tours from "@/app/component/tours/page";
-import Evaluate from "@/app/component/evaluate/page";
-import scrollEffect from "@/app/component/function/scrollEffect";
-import Posts from "@/app/component/posts/page";
-import Banner from "@/app/component/banner/page";
-import Partner from "@/app/component/partner/page";
+import React, {useEffect} from "react";
+import BannerHome from "@/app/component/bannerHome/bannerHome";
+import Places from "@/app/component/places/places";
+import Tours from "@/app/component/tours/tours";
+import Evaluate from "@/app/component/evaluate/evaluate";
+import Posts from "@/app/component/posts/posts";
+import Partner from "@/app/component/partner/partner";
 
 export default function Home() {
 
@@ -44,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <Banner/>
+      <BannerHome/>
       {/* */}
       <Places/>
       {/* */}

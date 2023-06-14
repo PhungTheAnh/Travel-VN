@@ -8,6 +8,7 @@ import {BsArrowRight} from "react-icons/bs";
 import findPosition from "@/app/component/function/findPosition";
 import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
+import Link from "next/link";
 
 const Places = (props: any) => {
   const placeMainRef = useRef<HTMLInputElement | null>(null);
@@ -72,8 +73,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
@@ -103,8 +104,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
@@ -134,8 +135,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
@@ -165,8 +166,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
@@ -196,8 +197,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
@@ -227,8 +228,8 @@ const Places = (props: any) => {
           className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <a className="cursor-pointer" href=""><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></a>
+              <Link className="cursor-pointer" href="#"><p
+                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
                 <p className="md:text-sm xl:text-base text-white">Hà Nội</p>

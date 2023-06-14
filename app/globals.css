@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #cc0000;
+}
 
 .menu_link {
     text-decoration: none;
@@ -18,6 +26,8 @@
 .menu_link:active {
     background-size: 100% 3px;
 }
+
+/*header*/
 
 .header .logo-header {
     filter: invert(36%) sepia(10%) saturate(5770%) hue-rotate(196deg) brightness(97%) contrast(85%);
@@ -38,10 +48,11 @@
     transition: all 0.5s ease-in-out;
 }
 
-.header .header-search, .header .header-user, .header a {
+.header .btnSearchMenu, .header .btnUserMenu, .header a {
     font-weight: 500;
     color: #4366c5 !important;
     transition: all 0.5s ease-in-out;
+    stroke: #4366c5 !important;
 }
 
 .header .menu_link {
@@ -60,6 +71,37 @@
 .menu-active {
     visibility: visible;
     left: 0;
+}
+
+.header-scroll .userMenu{
+    background: linear-gradient(45deg, #5d85d4, #3f59b6);
+    box-shadow: 0 10px 20px #00000033;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateX(90deg);
+    transform-style: preserve-3d;
+    transform-origin: top center;
+}
+
+.header-scroll .userMenu-active{
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    transition: all 0.25s linear
+}
+
+.searchMenu{
+    transform: translateX(-50%) rotateX(90deg) !important;
+}
+
+.searchMenu-active{
+    visibility: visible !important;
+    opacity: 1;
+    transform: translateX(-50%) rotateX(0deg) !important;
+    transition: all 0.25s linear;
 }
 
 /*scrollbar*/
@@ -195,6 +237,19 @@ body::-webkit-scrollbar-thumb {
 .partners .slick-slide{
     margin: 0 25px !important;
 }
+/* profile */
+.profile-tab-active{
+    background: #4366c5 !important;
+}
+
+.profile-tab-active svg{
+    color: white !important;
+}
+
+.profile-tab-active p{
+    color: white !important;
+}
+
 
 @media screen and (min-width: 768px){
     .tours .slick-slide {

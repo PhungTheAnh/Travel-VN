@@ -6,6 +6,7 @@ import scrollEffect from "@/app/component/function/scrollEffect";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import Slider from "react-slick";
 import Image from "next/image";
+import Link from "next/link";
 
 const Posts = () => {
   const postTitleRef = useRef<HTMLInputElement | null>(null);
@@ -75,11 +76,11 @@ const Posts = () => {
               <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
-              <a href=""><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></a>
+              <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
               <div className="flex justify-between items-center">
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">By <span>Admin</span></p>
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">24/05/2023</p>
-                <a className="cursor-pointer" href=""><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></a>
+                <Link className="cursor-pointer" href="#"><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></Link>
               </div>
             </div>
           </div>
@@ -88,11 +89,11 @@ const Posts = () => {
               <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/nhatrang3.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
-              <a href=""><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></a>
+              <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
               <div className="flex justify-between items-center">
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">By <span>Admin</span></p>
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">24/05/2023</p>
-                <a className="cursor-pointer" href=""><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></a>
+                <Link className="cursor-pointer" href="#"><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></Link>
               </div>
             </div>
           </div>
@@ -101,11 +102,11 @@ const Posts = () => {
               <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
-              <a href=""><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></a>
+              <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
               <div className="flex justify-between items-center">
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">By <span>Admin</span></p>
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">24/05/2023</p>
-                <a className="cursor-pointer" href=""><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></a>
+                <Link className="cursor-pointer" href="#"><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></Link>
               </div>
             </div>
           </div>
@@ -114,11 +115,11 @@ const Posts = () => {
               <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
-              <a href=""><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></a>
+              <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
               <div className="flex justify-between items-center">
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">By <span>Admin</span></p>
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">24/05/2023</p>
-                <a className="cursor-pointer" href=""><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></a>
+                <Link className="cursor-pointer" href="#"><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></Link>
               </div>
             </div>
           </div>
@@ -127,11 +128,11 @@ const Posts = () => {
               <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
-              <a href=""><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></a>
+              <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
               <div className="flex justify-between items-center">
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">By <span>Admin</span></p>
                 <p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base">24/05/2023</p>
-                <a className="cursor-pointer" href=""><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></a>
+                <Link className="cursor-pointer" href="#"><p className="truncate text-white hover:text-[#5d85d4] text-base lg:text-[13px] xl:text-base flex items-center justify-center gap-[3px]">Xem bài viết <FiChevronRight className="text-white hover:text-[#5d85d4]" size={18}/></p></Link>
               </div>
             </div>
           </div>

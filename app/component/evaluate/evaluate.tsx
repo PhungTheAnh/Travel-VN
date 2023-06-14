@@ -32,12 +32,13 @@ const Evaluate = () => {
     //   }
     // }
     // window.addEventListener("scroll", onScroll)
+    const onScroll: EventListener = () => {
+      scrollEffect(evaluateSlideRef,"evaluate-slide-active")
+    }
+    window.addEventListener("scroll", onScroll)
   }, [])
 
-  const onScroll: EventListener = () => {
-    scrollEffect(evaluateSlideRef,"evaluate-slide-active")
-  }
-  window.addEventListener("scroll", onScroll)
+
   //
   const evaluate_slide = {
     dots: true,
