@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import Image from "next/image";
 import {AiFillStar, AiOutlineShoppingCart} from "react-icons/ai";
 import {CiTimer} from "react-icons/ci";
@@ -12,6 +12,8 @@ import findPosition from "@/app/component/function/findPosition";
 import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
 import Link from "next/link";
+import SlickArrowLeft from "@/app/component/slickArrow/slickArrowLeft";
+import SlickArrowRight from "@/app/component/slickArrow/slickArrowRight";
 
 const Tours = () => {
   const tourTitleRef = useRef<HTMLInputElement | null>(null);
@@ -24,15 +26,18 @@ const Tours = () => {
     }
     window.addEventListener("scroll", onScroll)
   }, [])
-  const toursSlick = {
+
+  const settings = {
     centerMode: true,
     centerPadding: '0',
     slidesToShow: 3,
     focusOnSelect: true,
     infinite: true,
-    prevArrow: (<FaChevronLeft color={"#4366c5"} size={40}/>),
-    nextArrow: (<FaChevronRight color={"#4366c5"} size={40}/>),
-    responsive: [
+    // @ts-ignore
+    prevArrow: <SlickArrowLeft/>,
+    // @ts-ignore
+    nextArrow: <SlickArrowRight/>,
+    responsive:[
       {
         breakpoint: 1024,
         settings: {
@@ -76,7 +81,7 @@ const Tours = () => {
       {/**/}
       <div ref={tourMainRef}
            className={"tours translate-y-[160px] opacity-0 transition-all duration-[800ms] w-full rounded-xl"}>
-        <Slider className="flex justify-between items-center" {...toursSlick}>
+        <Slider className="flex justify-between items-center" {...settings}>
           <div className="bg-white transition-all duration-300 outline-0 p-[15px] rounded-xl relative">
             <div className="h-[300px] mb-[20px] rounded-xl shadow-lg">
               <Image src="/tours/codohue3 (1).jpg" alt={"Cố Đô Huế"} width={0}

@@ -7,6 +7,8 @@ import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
+import SlickArrowLeft from "@/app/component/slickArrow/slickArrowLeft";
+import SlickArrowRight from "@/app/component/slickArrow/slickArrowRight";
 
 const Posts = () => {
   const postTitleRef = useRef<HTMLInputElement | null>(null);
@@ -24,8 +26,10 @@ const Posts = () => {
     slidesToShow: 3,
     focusOnSelect: true,
     infinite: true,
-    prevArrow: (<FaChevronLeft color={"#4366c5"} size={40}/>),
-    nextArrow: (<FaChevronRight color={"#4366c5"} size={40}/>),
+    // @ts-ignore
+    prevArrow: <SlickArrowLeft/>,
+    // @ts-ignore
+    nextArrow: <SlickArrowRight/>,
     responsive: [
       {
         breakpoint: 1024,
