@@ -1,9 +1,24 @@
 import React from 'react';
+import BannerPage from "@/app/component/bannerPage/bannerPage";
+import AboutCompany from "@/app/component/aboutme/aboutCompany";
+import AboutIntroduce from "@/app/component/aboutme/aboutIntroduce";
+import AboutService from "@/app/component/aboutme/aboutService";
+import AboutTeam from "@/app/component/aboutme/aboutTeam";
+import AboutContact from "@/app/component/aboutme/aboutContact";
 
 const Page = () => {
+  const pageTitle = "Về chúng tôi"
   return (
-    <div>
-
+    <div className="w-f h-full about_page">
+      <BannerPage pageTitle={pageTitle} pageSlogan="Điều tốt nhất cho khách hàng của chúng tôi"
+                  banner={" bg-[url('/banner/dalat.jpg')]"}/>
+      <div className="w-full py-[50px] xl:py-[80px] bg-white">
+        <AboutCompany/>
+        <AboutIntroduce/>
+        <AboutService/>
+        <AboutTeam/>
+        <AboutContact/>
+      </div>
     </div>
   );
 };

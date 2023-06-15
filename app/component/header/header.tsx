@@ -7,10 +7,11 @@ import {useEffect, useRef, useState} from "react";
 import {GrFormClose} from "react-icons/gr";
 import {log} from "util";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
+import LinkHeader from "@/app/component/linkHeader/linkHeader";
 
 
 const Header = () => {
-
   let [header, setHeader] = useState<string>("")
   let [menu, setMenu] = useState<string>("")
   const menuRef = useRef(null);
@@ -107,23 +108,12 @@ const Header = () => {
                                width={135} height={20}/></Link>
           </div>
           <div className={"hidden lg:flex gap-[30px] items-center content-center transition-all duration-300"}>
-            <Link href="./"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Trang
-              chủ</Link>
-            <Link href="./aboutme"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Về
-              chúng tôi</Link>
-            <Link href="./address"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Địa
-              điểm</Link>
-            <Link href="./tours"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Tours</Link>
-            <Link href="./posts"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Bài
-              viết</Link>
-            <Link href="./contact"
-              className={"menu_link text-[16px] text-white tracking-[0.5px] leading-[24px] font-medium transition-all cursor-pointer"}>Liên
-              hệ</Link>
+            <LinkHeader pagePathName={"/"} pageTitle={"Trang chủ"}/>
+            <LinkHeader pagePathName={"/aboutme"} pageTitle={"Về chúng tôi"}/>
+            <LinkHeader pagePathName={"/address"} pageTitle={"Địa điểm"}/>
+            <LinkHeader pagePathName={"/tours"} pageTitle={"Tours"}/>
+            <LinkHeader pagePathName={"/posts"} pageTitle={"Bài viết"}/>
+            <LinkHeader pagePathName={"/contact"} pageTitle={"Liên hệ"}/>
           </div>
           <div className={"flex gap-2.5 md:gap-[30px] items-center justify-center"}>
             <BsSearch

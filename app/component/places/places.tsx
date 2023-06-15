@@ -5,7 +5,6 @@ import {IoLocationOutline} from "react-icons/io5";
 import {FaEye} from "react-icons/fa";
 import {IoIosShareAlt} from "react-icons/io";
 import {BsArrowRight} from "react-icons/bs";
-import findPosition from "@/app/component/function/findPosition";
 import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
 import Link from "next/link";
@@ -18,7 +17,6 @@ const Places = (props: any) => {
     const onScroll: EventListener = () => {
       scrollEffect(placeTitleRef, "title-active")
       scrollEffect(placeMainRef, "main-active")
-
     }
     window.addEventListener("scroll", onScroll)
   }, [])

@@ -23,7 +23,7 @@ const Footer = () => {
           <Link href="/aboutme"><p className="text-sm lg:text-base font-normal text-white">Về chúng tôi</p></Link>
           <Link href="/address"><p className="text-sm lg:text-base font-normal text-white">Địa điểm</p></Link>
           <Link href="/tours"><p className="text-sm lg:text-base font-normal text-white">Tours</p></Link>
-          <Link href="/library"><p className="text-sm lg:text-base font-normal text-white">Thư viện</p></Link>
+          <Link href="/posts"><p className="text-sm lg:text-base font-normal text-white">Bài viết</p></Link>
           <Link href="/posts"><p className="text-sm lg:text-base font-normal text-white">Bài viết</p></Link>
         </div>
         <div className="flex flex-col justify-center gap-[15px]">

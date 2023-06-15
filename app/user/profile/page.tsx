@@ -5,7 +5,7 @@ import {LuSwitchCamera} from "react-icons/lu";
 import {FaRegUser} from 'react-icons/fa';
 import {MdLockOutline, MdOutlineLogout} from 'react-icons/md';
 import Image from "next/image";
-import BannerUser from "@/app/component/bannerUser/bannerUser";
+import BannerPage from "@/app/component/bannerPage/bannerPage";
 import Link from "next/link";
 
 const Profile = () => {
@@ -36,7 +36,7 @@ const Profile = () => {
   // @ts-ignore
   return (
     <div className="w-full h-full">
-      <BannerUser pageTitle={"Thông tin cá nhân"} />
+      <BannerPage pageTitle={"Thông tin cá nhân"} />
       <div className="w-full py-[50px] xl:py-[80px] bg-white">
         <div className="w-[95%] xl:max-w-[1350px] mx-auto flex md:flex-row flex-col justify-between gap-[30px] md:gap-[20px] lg:gap-[30px]">
           <div

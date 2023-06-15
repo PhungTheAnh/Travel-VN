@@ -10,38 +10,8 @@ import Partner from "@/app/component/partner/partner";
 
 export default function Home() {
 
-  useEffect(() => {
-    // let callback1 = (entries: any, observer: any) => {
-    //   entries.forEach((entry: any) => {
-    //     if (entry.isIntersecting) {
-    //       setPlaceTitle(" title-active")
-    //     } else {
-    //       setPlaceTitle("")
-    //     }
-    //   });
-    // };
-    // const observer1 = new IntersectionObserver(callback1);
-    // // @ts-ignore
-    // observer1.observe(placeTitleRef.current);
-    // let callback2 = (entries: any, observer: any) => {
-    //   entries.forEach((entry: any) => {
-    //     if (entry.isIntersecting) {
-    //       setTourTitle(" title-active")
-    //     } else {
-    //       setTourTitle("")
-    //     }
-    //   });
-    // };
-    // const observer2 = new IntersectionObserver(callback2);
-    // // @ts-ignore
-    // observer2.observe(tourTitleRef.current);
-    const onScroll: EventListener = () => {
-    }
-    window.addEventListener("scroll", onScroll)
-  })
-
   return (
-    <div className="">
+    <div className="home_page">
       <BannerHome/>
       {/* */}
       <Places/>
