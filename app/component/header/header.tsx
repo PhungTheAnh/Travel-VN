@@ -9,14 +9,14 @@ import {log} from "util";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import LinkHeader from "@/app/component/linkHeader/linkHeader";
+import LinkHeaderMobile from "@/app/component/linkHeader/linkHeaderMobile";
 
 
 const Header = () => {
-  let [header, setHeader] = useState<string>("")
-  let [menu, setMenu] = useState<string>("")
-  const menuRef = useRef(null);
-  const userMenuRef = useRef<HTMLInputElement | null >(null);
-  const searchMenuRef = useRef<HTMLInputElement | null >(null);
+  const headerRef = useRef<HTMLInputElement | null>(null);
+  const menuRef = useRef<HTMLInputElement | null>(null);
+  const userMenuRef = useRef<HTMLInputElement | null>(null);
+  const searchMenuRef = useRef<HTMLInputElement | null>(null);
   const BtnClickSearchMenu = () => {
     searchMenuRef.current?.classList.toggle("searchMenu-active")
   }
@@ -25,35 +25,45 @@ const Header = () => {
     userMenuRef.current?.classList.toggle("userMenu-active")
   }
 
-  let MenuClick = () => {
-    setMenu(" menu-active")
+  const MenuClick = () => {
+    menuRef.current?.classList.toggle("menu-active")
     document.body.style.overflowY = "hidden"
+  }
+  const MenuClose = () => {
+    menuRef.current?.classList.remove("menu-active")
+    document.body.style.overflowY = "scroll"
   }
 
   useEffect(() => {
     window.addEventListener("click", (e) => {
       if (e.target === menuRef.current) {
-        setMenu("")
+        menuRef.current?.classList.remove("menu-active")
         document.body.style.overflowY = "scroll"
       }
     })
     const onScroll: EventListener = async () => {
       if (window.scrollY > 1) {
-        setHeader(" header")
+        headerRef.current?.classList.add("header")
       } else {
-        setHeader("")
+        headerRef.current?.classList.remove("header")
       }
     }
     window.addEventListener("scroll", onScroll)
   })
+
   return (
-    <div className={'w-full fixed top-0 left-0 z-[99] bg-transparent' + header}>
+    <div ref={headerRef} className='w-full fixed top-0 left-0 z-[99] bg-transparent'>
       {/*search*/}
-      <div ref={searchMenuRef} className="searchMenu flex items-center justify-center opacity-0 invisible fixed z-[1] left-[50%] w-[98%] md:w-[80%] lg:w-[84%] xl:w-[70%] translate-y-[-50%] translate-x-[-50%] bottom-[50px] transition-all duration-300">
-        <div className="flex lg:flex-row flex-col items-center justify-between gap-[20px] lg:gap-[30px] w-[80%] lg:w-full shadow-[0_0_20px_#00000099] bg-[#4366c5ab] p-[30px] lg:p-[20px] rounded-xl">
+      <div ref={searchMenuRef}
+           className="searchMenu flex items-center justify-center opacity-0 invisible z-[1] fixed left-[50%] w-[98%] md:w-[80%] lg:w-[84%] xl:w-[70%] translate-y-[-50%] translate-x-[-50%] top-1/2 transition-all duration-300">
+        <div className="fixed w-full h-full top-0 left-0 bg-transparent">
+        </div>
+        <div
+          className="flex lg:flex-row flex-col items-center justify-between gap-[20px] lg:gap-[30px] w-[80%] lg:w-full shadow-[0_0_20px_#00000099] bg-[#4366c5ab] p-[30px] lg:p-[20px] rounded-xl">
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
             <p className="text-base xl:text-lg text-white">Địa điểm</p>
-            <select className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]" name="address" id="">
+            <select className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]"
+                    name="address" id="">
               <option value="">Địa điểm</option>
               <option value="">Nam Định</option>
               <option value="">Hà Nội</option>
@@ -61,36 +71,38 @@ const Header = () => {
           </div>
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
             <p className="text-base xl:text-lg text-white">Ngày khởi hành</p>
-            <input className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]" placeholder={"Ngày khởi hành"} type="text"/>
+            <input className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]"
+                   placeholder={"Ngày khởi hành"} type="text"/>
           </div>
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
             <p className="text-base xl:text-lg text-white">Số người</p>
-            <input className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]" placeholder={"Số người"} type="number"/>
+            <input className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]"
+                   placeholder={"Số người"} type="number"/>
           </div>
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
             <p className="text-base xl:text-lg text-white opacity-0">Tìm kiếm</p>
-            <p className="py-[10px] px-[30px] w-full outline-0 border border-white rounded-[36px] text-lg text-white bg-[#4366c5] z-[1] cursor-pointer">Tìm kiếm</p>
+            <p
+              className="py-[10px] px-[30px] w-full outline-0 border border-white rounded-[36px] text-lg text-white bg-[#4366c5] z-[1] cursor-pointer">Tìm
+              kiếm</p>
           </div>
         </div>
       </div>
       {/*menu mobile*/}
       <div ref={menuRef}
-           className={"invisible w-full h-full fixed top-0 left-[-400px] flex bg-transparent z-[100] transition-all duration-400" + menu}>
+           className="invisible w-full h-full fixed top-0 left-[-400px] flex bg-transparent z-[100] transition-all duration-400">
         <div className="w-[340px] h-[100vh] py-7 px-10 bg-[#4366c5] relative transition-all duration-400">
-          <GrFormClose onClick={() => {
-            setMenu("");
-            document.body.style.overflowY = "scroll"
-          }} color={"white"} size={30}
+          <GrFormClose onClick={MenuClose} color={"white"} size={30}
                        className="close hover:scale-[1.2] transition-all duration-400 cursor-pointer absolute right-[20px] top-[22px]"/>
-          <Link href="/"><Image className={"logo-header cursor-pointer"} src="/header/logo.png" alt="TRAVEL VN" width={135}
-                             height={20}/></Link>
+          <Link href="/"><Image className={"logo-header cursor-pointer"} src="/header/logo.png" alt="TRAVEL VN"
+                                width={135}
+                                height={20}/></Link>
           <div className="flex flex-col gap-[30px] mt-[60px]">
-            <Link href="/"><p className="text-white text-xl font-medium">Trang chủ</p></Link>
-            <Link href="aboutme"><p className="text-white text-xl font-medium">Về chúng tôi</p></Link>
-            <Link href="/address"><p className="text-white text-xl font-medium">Địa điểm</p></Link>
-            <Link href="/tours"><p className="text-white text-xl font-medium">Tours</p></Link>
-            <Link href="/posts"><p className="text-white text-xl font-medium">Bài viết</p></Link>
-            <Link href="/contact"><p className="text-white text-xl font-medium">Liên hệ</p></Link>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/" pageTitle="Trang chủ"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/aboutme" pageTitle="Về chúng tôi"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/address" pageTitle="Địa điểm"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/tours" pageTitle="Tours"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/posts" pageTitle="Bài viết"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/contact" pageTitle="Liên hệ"/>
           </div>
         </div>
       </div>
@@ -105,7 +117,7 @@ const Header = () => {
               <div className="w-[25px] h-[4px] rounded-[10px] bg-[#fff]"></div>
             </div>
             <Link href="/"><Image className={"logo-header cursor-pointer"} src="/header/logo.png" alt="TRAVEL VN"
-                               width={135} height={20}/></Link>
+                                  width={135} height={20}/></Link>
           </div>
           <div className={"hidden lg:flex gap-[30px] items-center content-center transition-all duration-300"}>
             <LinkHeader pagePathName={"/"} pageTitle={"Trang chủ"}/>
@@ -125,11 +137,20 @@ const Header = () => {
                 onClick={BtnClickUserMenu}
                 className={"cursor-pointer relative hover:translate-y-[-10%] btnUserMenu transition-all duration-500"}
                 color={"white"} size={22}/>
-              <div ref={userMenuRef} className="userMenu z-10 w-[230px] p-[15px] rounded-xl absolute right-0 top-[33px] flex flex-col gap-2.5 transition-all duration-300">
-                <Link className="cursor-pointer w-full" href="/user/profile"><p className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Thông tin cá nhân</p></Link>
-                <Link className="cursor-pointer w-full" href="/user/login"><p className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng nhập</p></Link>
-                <Link className="cursor-pointer w-full" href="/user/register"><p className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng ký</p></Link>
-                <p className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de] cursor-pointer">Đăng xuất</p>
+              <div ref={userMenuRef}
+                   className="userMenu z-10 w-[230px] p-[15px] rounded-xl absolute right-0 top-[33px] flex flex-col gap-2.5 transition-all duration-300">
+                <Link className="cursor-pointer w-full" href="/user/profile"><p
+                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Thông
+                  tin cá nhân</p></Link>
+                <Link className="cursor-pointer w-full" href="/user/login"><p
+                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng
+                  nhập</p></Link>
+                <Link className="cursor-pointer w-full" href="/user/register"><p
+                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng
+                  ký</p></Link>
+                <p
+                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de] cursor-pointer">Đăng
+                  xuất</p>
               </div>
             </div>
           </div>
