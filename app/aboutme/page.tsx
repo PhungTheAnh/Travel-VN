@@ -5,6 +5,7 @@ import AboutIntroduce from "@/app/component/aboutme/aboutIntroduce";
 import AboutService from "@/app/component/aboutme/aboutService";
 import AboutTeam from "@/app/component/aboutme/aboutTeam";
 import AboutContact from "@/app/component/aboutme/aboutContact";
+import AboutSlogan from "@/app/component/aboutme/aboutSlogan";
 
 const Page = () => {
   const pageTitle = "Về chúng tôi"
@@ -17,6 +18,7 @@ const Page = () => {
         <AboutIntroduce/>
         <AboutService/>
         <AboutTeam/>
+        <AboutSlogan/>
         <AboutContact/>
       </div>
     </div>

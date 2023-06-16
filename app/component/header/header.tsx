@@ -3,11 +3,9 @@
 import Image from "next/image";
 import {BsSearch} from "react-icons/bs";
 import {FaRegUser} from "react-icons/fa";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 import {GrFormClose} from "react-icons/gr";
-import {log} from "util";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
 import LinkHeader from "@/app/component/linkHeader/linkHeader";
 import LinkHeaderMobile from "@/app/component/linkHeader/linkHeaderMobile";
 

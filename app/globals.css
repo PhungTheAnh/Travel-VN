@@ -265,11 +265,19 @@ body::-webkit-scrollbar-thumb {
     transform: translateZ(0);
 }
 
+.about_page .main-active{
+    opacity: 1;
+    transform: translateZ(0);
+}
+
 .about_page .content-active{
     opacity: 1;
     transform: translateZ(0);
 }
 
+.formContactAbout > div{
+    /*width: 100%;*/
+}
 
 
 

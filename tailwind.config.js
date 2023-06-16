@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineClamp: {
+        8: "8",
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
