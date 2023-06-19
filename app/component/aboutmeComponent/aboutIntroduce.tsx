@@ -32,7 +32,7 @@ const AboutIntroduce = () => {
           <p className="text-[#1f2933] text-base xl:text-xl tracking-[0.8px] leading-[25px]">Nạp năng lượng cho tâm hồn
             bạn bằng những chuyến du lịch</p>
         </div>
-        <div className="p-[15px] md:p-[30px] shadow-[0_10px_20px_#00000022] rounded-xl flex flex-col items-center justify-center gap-[20px] md:gap-[5px]">
+        <div className="p-[5px] md:p-[30px] shadow-[0_10px_20px_#00000022] rounded-xl flex flex-col items-center justify-center gap-[20px] md:gap-[5px]">
           <div className="flex md:flex-row flex-col items-center justify-center">
             <div ref={contentIntroduce1Ref} className="flex gap-[15px] flex-col w-full md:w-1/2 p-[15px] md:p-[30px] xl:p-[60px] translate-x-[-100px] opacity-0 transition-all duration-1000">
               <p className="text-[#4366c5] text-[24px] font-semibold leading-[35px]">VN Travel</p>

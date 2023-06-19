@@ -1,11 +1,11 @@
 import React from 'react';
 import BannerPage from "@/app/component/bannerPage/bannerPage";
-import AboutCompany from "@/app/component/aboutme/aboutCompany";
-import AboutIntroduce from "@/app/component/aboutme/aboutIntroduce";
-import AboutService from "@/app/component/aboutme/aboutService";
-import AboutTeam from "@/app/component/aboutme/aboutTeam";
-import AboutContact from "@/app/component/aboutme/aboutContact";
-import AboutSlogan from "@/app/component/aboutme/aboutSlogan";
+import AboutCompany from "@/app/component/aboutmeComponent/aboutCompany";
+import AboutIntroduce from "@/app/component/aboutmeComponent/aboutIntroduce";
+import AboutService from "@/app/component/aboutmeComponent/aboutService";
+import AboutTeam from "@/app/component/aboutmeComponent/aboutTeam";
+import AboutContact from "@/app/component/aboutmeComponent/aboutContact";
+import AboutSlogan from "@/app/component/aboutmeComponent/aboutSlogan";
 
 const Page = () => {
   const pageTitle = "Về chúng tôi"

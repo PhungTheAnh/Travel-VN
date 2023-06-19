@@ -32,7 +32,7 @@ const AboutService = () => {
   return (
     <div className="w-full relative py-[40px] md:py-[60px] xl:py-[80px]">
       <div ref={titleServiceRef} className="relative z-[2] w-full mt-[30px] mb-[15px] flex flex-col items-center gap-[15px] opacity-0 translate-y-[-160px] transition-all duration-1000">
-        <p className="text-[30px] md:text-[35px] xl:text-[40px] text-white font-semibold tracking-[2px] uppercase">Dịch vụ của chúng tôi</p>
+        <p className="text-[30px] md:text-[35px] xl:text-[40px] text-white font-semibold tracking-[2px] uppercase w-[95%] md:w-full text-center">Dịch vụ của chúng tôi</p>
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/banner/dalat2.jpg')] bg-center bg-no-repeat bg-cover bg-fixed"></div>
       <div ref={mainServiceRef} className="w-[95%] mx-auto my-[60px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] z-[1] translate-y-[160px] transition-all duration-1000">

@@ -6,8 +6,8 @@ import {FaRegUser} from "react-icons/fa";
 import {useEffect, useRef} from "react";
 import {GrFormClose} from "react-icons/gr";
 import Link from "next/link";
-import LinkHeader from "@/app/component/linkHeader/linkHeader";
-import LinkHeaderMobile from "@/app/component/linkHeader/linkHeaderMobile";
+import LinkHeader from "@/app/component/header/linkHeader";
+import LinkHeaderMobile from "@/app/component/header/linkHeaderMobile";
 
 
 const Header = () => {

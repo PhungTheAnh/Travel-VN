@@ -1,5 +1,5 @@
 import BannerPage from "@/app/component/bannerPage/bannerPage";
-import InputUser from "@/app/component/inputUser/inputUser";
+import InputUser from "@/app/component/header/inputUser";
 import Link from "next/link";
 
 const Register = () => {
