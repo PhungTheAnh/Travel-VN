@@ -2,6 +2,7 @@
 
 import React, {useEffect, useRef} from 'react';
 import scrollEffect from "@/app/component/function/scrollEffect";
+import AddressTabsSearch from "@/app/component/addressComponent/addressTabsSearch";
 
 const AddressSearch = () => {
   useEffect(() => {
@@ -16,11 +17,7 @@ const AddressSearch = () => {
         <div className="w-full mt-[30px] mb-[40px] flex flex-col items-center gap-[15px] transition-all duration-1000">
           <p className="text-[#231d0d] text-[30px] md:text-[35px] xl:text-[40px] text-center font-bold uppercase leading-[45px]">Tìm điểm đến của bạn</p>
         </div>
-        <div className="relative w-full flex justify-between p-[15px] mb-[30px] bg-[#f2f6fc] shadow-[0_10px_20px_#00000011] rounded-xl">
-          <div className="w-full flex items-center gap-[30px]">
-
-          </div>
-        </div>
+        <AddressTabsSearch/>
       </div>
     </div>
   );
