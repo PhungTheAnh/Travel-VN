@@ -35,7 +35,7 @@ const AboutIntroduce = () => {
         <div className="p-[5px] md:p-[30px] shadow-[0_10px_20px_#00000022] rounded-xl flex flex-col items-center justify-center gap-[20px] md:gap-[5px]">
           <div className="flex md:flex-row flex-col items-center justify-center">
             <div ref={contentIntroduce1Ref} className="flex gap-[15px] flex-col w-full md:w-1/2 p-[15px] md:p-[30px] xl:p-[60px] translate-x-[-100px] opacity-0 transition-all duration-1000">
-              <p className="text-[#4366c5] text-[24px] font-semibold leading-[35px]">VN Travel</p>
+              <p className="text-primary text-[24px] font-semibold leading-[35px]">VN Travel</p>
               <p className="text-[#1f2933] text-sm text-left leading-[25px]">Tại VN Travel chúng tôi đam mê giúp mọi người
                 khám phá những điều tuyệt vời ở Việt Nam. Nhiệm vụ của chúng tôi là làm cho chuyến du lịch trở nên dễ tiếp
                 cận và thú vị cho mọi người.</p>
@@ -56,7 +56,7 @@ const AboutIntroduce = () => {
                      className="w-full h-full object-cover"/>
             </div>
             <div ref={contentIntroduce2Ref} className="flex gap-[15px] flex-col w-full md:w-1/2 p-[15px] md:p-[30px] xl:p-[60px] translate-x-[-100px] opacity-0 transition-all duration-1000">
-              <p className="text-[#4366c5] text-[24px] font-semibold leading-[35px]">VN Travel</p>
+              <p className="text-primary text-[24px] font-semibold leading-[35px]">VN Travel</p>
               <p className="text-[#1f2933] text-sm text-left leading-[25px]">Tại VN Travel chúng tôi đam mê giúp mọi người
                 khám phá những điều tuyệt vời ở Việt Nam. Nhiệm vụ của chúng tôi là làm cho chuyến du lịch trở nên dễ tiếp
                 cận và thú vị cho mọi người.</p>

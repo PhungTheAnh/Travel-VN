@@ -18,7 +18,7 @@ const ForgotPassword = () => {
             className="w-full text-white py-2.5 px-5 text-lg font-semibold rounded-lg bg-[#4366c5] text-center cursor-pointer">{pageTitle}</p>
           </Link>
           <p className="text-sm italic font-normal text-[#666]">Bạn đã có tài khoản ? <Link
-            className="underline text-[#4366c5]" href="/user/register">Đăng nhập</Link></p>
+            className="underline text-primary" href="/user/register">Đăng nhập</Link></p>
         </div>
       </div>
     </div>

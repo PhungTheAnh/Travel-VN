@@ -25,7 +25,7 @@ const AboutContact = () => {
                 <FiPhone size={24} color={"#4366c5"} className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"/>
                 <p className="text-sm md:text-base text-[#252525]">Hãy gọi cho chúng tôi:</p>
               </div>
-              <Link href={"tel:0386136374"} className="text-lg md:text-lg xl:text-2xl text-[#4366c5] font-semibold">0386136374</Link>
+              <Link href={"tel:0386136374"} className="text-lg md:text-lg xl:text-2xl text-primary font-semibold">0386136374</Link>
             </div>
           </div>
           <div className="w-full md:w-1/2">

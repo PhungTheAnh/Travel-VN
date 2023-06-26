@@ -74,7 +74,7 @@ const Tours = () => {
           biến</p>
         <div
           className="flex gap-[10px] items-center justify-center mt-[15px] mb-[20px] md:mb-[30px] lg:mb-[50px] cursor-pointer">
-          <p className="text-[#4366c5] text-base">Xem tất cả</p>
+          <p className="text-primary text-base">Xem tất cả</p>
           <FiChevronRight color={"#4366c5"} size={18}/>
         </div>
       </div>
@@ -114,7 +114,7 @@ const Tours = () => {
             <div className="">
               <p className="text-sm text-[#adadad] font-bold line-through">3,000,000 <span className="underline">đ</span>
               </p>
-              <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span
+              <p className="text-lg leading-[1rem] text-primary font-black">3,000,000 <span
                 className="underline">đ</span>
               </p>
             </div>
@@ -158,7 +158,7 @@ const Tours = () => {
             <div className="">
               <p className="text-sm text-[#adadad] font-bold line-through">3,000,000 <span className="underline">đ</span>
               </p>
-              <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span
+              <p className="text-lg leading-[1rem] text-primary font-black">3,000,000 <span
                 className="underline">đ</span>
               </p>
             </div>
@@ -202,7 +202,7 @@ const Tours = () => {
             <div className="">
               <p className="text-sm text-[#adadad] font-bold line-through">3,000,000 <span className="underline">đ</span>
               </p>
-              <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span
+              <p className="text-lg leading-[1rem] text-primary font-black">3,000,000 <span
                 className="underline">đ</span>
               </p>
             </div>
@@ -246,7 +246,7 @@ const Tours = () => {
             <div className="">
               <p className="text-sm text-[#adadad] font-bold line-through">3,000,000 <span className="underline">đ</span>
               </p>
-              <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span
+              <p className="text-lg leading-[1rem] text-primary font-black">3,000,000 <span
                 className="underline">đ</span>
               </p>
             </div>
@@ -290,7 +290,7 @@ const Tours = () => {
             <div className="">
               <p className="text-sm text-[#adadad] font-bold line-through">3,000,000 <span className="underline">đ</span>
               </p>
-              <p className="text-lg leading-[1rem] text-[#4366c5] font-black">3,000,000 <span
+              <p className="text-lg leading-[1rem] text-primary font-black">3,000,000 <span
                 className="underline">đ</span>
               </p>
             </div>

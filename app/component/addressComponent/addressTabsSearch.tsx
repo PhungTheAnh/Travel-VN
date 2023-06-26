@@ -46,7 +46,7 @@ const AddressTabsSearch = () => {
     return (
       props.tabs.map((tab: any) => (
         <div key={tab.id}
-             className="relative group w-full bg-white flex flex-col overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] max-w-[420px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
+             className="relative group w-full bg-white flex flex-col overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] md:max-w-[420px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
           <div className='h-[250px] w-full rounded-lg overflow-hidden'>
             <Image src={tab.image} alt={tab.name} width={0} height={0} sizes={"100vh"}
                    className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
@@ -58,7 +58,7 @@ const AddressTabsSearch = () => {
               <p>{tab.address}</p>
             </div>
             <p className="text-[#555555] text-sm text-left line-clamp-3 mb-[20px] ">{tab.description}</p>
-            <Link href="#" className="text-[#4366c5] text-base text-right flex items-center gap-[5px] justify-end">Xem
+            <Link href="#" className="text-primary text-base text-right flex items-center gap-[5px] justify-end">Xem
               chi tiết<BsArrowRightShort size={20} color={"#4366c5"}/></Link>
           </div>
         </div>

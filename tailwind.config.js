@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        "primary": "#4366c5"
+      },
       lineClamp: {
         8: "8",
       },

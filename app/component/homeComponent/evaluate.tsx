@@ -3,7 +3,6 @@
 import React, {useEffect, useRef} from 'react';
 import {AiFillStar} from "react-icons/ai";
 import Slider from "react-slick";
-import findPosition from "@/app/component/function/findPosition";
 import scrollEffect from "@/app/component/function/scrollEffect";
 
 const Evaluate = () => {

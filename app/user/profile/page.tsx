@@ -65,9 +65,9 @@ const Profile = () => {
             </div>
             {/**/}
             <div className="flex flex-col gap-[15px] items-center justify-center mb-[15px]">
-              <p className='text-2xl text-[#4366c5] font-semibold'>Phùng Thế Anh</p>
-              <p className='text-base text-[#4366c5] font-medium'>phungtheanh2001@gmail.com</p>
-              <p className='text-base text-[#4366c5] font-medium'>0386136374</p>
+              <p className='text-2xl text-primary font-semibold'>Phùng Thế Anh</p>
+              <p className='text-base text-primary font-medium'>phungtheanh2001@gmail.com</p>
+              <p className='text-base text-primary font-medium'>0386136374</p>
             </div>
             {/*  */}
             <div className="flex flex-col items-center justify-center gap-[15px] w-full">

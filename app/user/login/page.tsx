@@ -18,8 +18,8 @@ const Login = () => {
           </div>
           <p className="w-full text-white py-2.5 px-5 text-lg font-semibold rounded-lg bg-[#4366c5] text-center cursor-pointer">{pageTitle}</p>
           <div className="w-full flex justify-between">
-            <Link className="text-sm italic font-normal underline text-[#4366c5]" href="/user/forgotpassword">Bạn quên mật khẩu ?</Link>
-            <p className="text-sm italic font-normal text-[#666]">Bạn đã có tài khoản ? <Link className="underline text-[#4366c5]" href="/user/register">Đăng ký</Link></p>
+            <Link className="text-sm italic font-normal underline text-primary" href="/user/forgotpassword">Bạn quên mật khẩu ?</Link>
+            <p className="text-sm italic font-normal text-[#666]">Bạn đã có tài khoản ? <Link className="underline text-primary" href="/user/register">Đăng ký</Link></p>
           </div>
         </div>
       </div>
