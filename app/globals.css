@@ -292,11 +292,13 @@ body::-webkit-scrollbar-thumb {
 
 /* Tour Page */
 
-.tours_page .toursFilter {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: rotateX(90deg);
+@media screen and (max-width: 1024px) {
+    .tours_page .toursFilter {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: rotateX(90deg);
+    }
 }
 
 .tours_page .btnFilter {

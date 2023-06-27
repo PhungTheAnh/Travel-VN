@@ -7,19 +7,19 @@ import {Tab} from "@headlessui/react";
 import {BsGrid3X3Gap} from "react-icons/bs";
 import ToursResult from "@/app/component/toursComponent/toursResult";
 import {FaFilter} from "react-icons/fa";
+import {AiOutlineUnorderedList} from "react-icons/ai";
 
 
 const ToursFilter = () => {
   const places = ["Tất cả", "Hà Nội", "Hạ Long Bay", "Sapa", "Ninh Bình"]
   const prices = ["Tất cả", "2-5m", "5-8m", "> 8m"]
   const menuFilter = useRef<HTMLInputElement | null>(null)
+  const btnFilter = () => {
+    menuFilter.current?.classList.toggle("btnFilter")
+  }
 
   const classNames = (...classes: any) => {
     return classes.filter(Boolean).join(' ')
-  }
-
-  const btnFilter = () => {
-    menuFilter.current?.classList.toggle("btnFilter")
   }
 
   return (
@@ -28,7 +28,7 @@ const ToursFilter = () => {
         className="w-full 2xl:w-[85%] mx-auto relative flex flex-col lg:flex-row items-start justify-center gap-[30px]">
         <div
           ref={menuFilter}
-          className="toursFilter transition-all duration-150 lg:opacity-100 lg:visible lg:rotate-0 w-full lg:w-1/4 relative lg:sticky left-0 lg:top-[100px] flex flex-col items-center justify-center rounded-xl overflow-hidden bg-[#f2f6fc] shadow-[0_0px_20px_#00000022]">
+          className="toursFilter lg:h-full transition-all duration-150 lg:opacity-100 lg:visible lg:rotate-0 w-full lg:w-1/4 relative lg:sticky left-0 lg:top-[100px] flex flex-col items-center justify-center rounded-xl overflow-hidden bg-[#f2f6fc] shadow-[0_0px_20px_#00000022]">
           <p className="text-2xl text-[#333] py-[15px] font-semibold">Lọc thông tin</p>
           <div className="bg-[#a6c3ea] p-[30px] w-full">
             <Input
@@ -80,28 +80,19 @@ const ToursFilter = () => {
           </Tab.List>
         </div>
         <div className="relative w-full lg:w-3/4">
-          <div className="flex justify-between items-center w-full border-b border-[#a6c3ea] pb-[15px] mb-[30px]">
-            <div className="flex items-center gap-2">
-              <div onClick={btnFilter} className="block lg:hidden cursor-pointer">
-                <FaFilter size={30} color={"#4366c5"} />
-              </div>
-              <p className="text-[30px] font-bold text-left text-black">Tour du lịch</p>
-            </div>
-            <BsGrid3X3Gap size={30} color={"#4366c5"}/>
-          </div>
           <div>
             <Tab.Panels>
               {
                 places.map((result) => {
                   return (
-                    <Tab.Panel key={result}><ToursResult/></Tab.Panel>
+                    <Tab.Panel key={result}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
                   )
                 })
               }
               {
                 prices.map((result) => {
                   return (
-                    <Tab.Panel key={result}><ToursResult/></Tab.Panel>
+                    <Tab.Panel key={result}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
                   )
                 })
               }
