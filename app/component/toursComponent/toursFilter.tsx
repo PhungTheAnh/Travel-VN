@@ -4,10 +4,7 @@ import React, {useRef} from 'react';
 import {Input} from "@nextui-org/react";
 import {BiSearch} from "react-icons/bi";
 import {Tab} from "@headlessui/react";
-import {BsGrid3X3Gap} from "react-icons/bs";
 import ToursResult from "@/app/component/toursComponent/toursResult";
-import {FaFilter} from "react-icons/fa";
-import {AiOutlineUnorderedList} from "react-icons/ai";
 
 
 const ToursFilter = () => {
