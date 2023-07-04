@@ -12,7 +12,7 @@ const BannerPage = (props: any) => {
   return (
     <div className={"w-full h-[45vh] relative bg-no-repeat bg-cover bg-center flex items-center justify-center" + banner || " bg-[url('/banner/dalat2.jpg')]" }>
       <div className="absolute top-0 left-0 w-full h-full bg-[#00000066] z-[1]"></div>
-      <div className="z-[2] w-[90%] 2xl:w-[76%] mx-auto">
+      <div className="z-[2] w-[95%] 2xl:w-[76%] mx-auto">
         <p
           className="text-white text-[32px] md:text-[35px] lg:text-[40px] xl:text-[48px] font-semibold leading-[30px] lg:leading-[57px] mb-[15px] text-left">{pageTitle}</p>
         {

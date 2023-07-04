@@ -106,7 +106,7 @@ const Header = () => {
       </div>
       {/**/}
       <div className="w-full mx-auto py-[35px] rounded-[12px] header-scroll transition-all duration-500">
-        <div className={"w-[90%] 2xl:w-[76%] mx-auto flex justify-between"}>
+        <div className={"w-[95%] 2xl:w-[76%] mx-auto flex justify-between"}>
           <div className="flex gap-[10px] items-center">
             <div onClick={MenuClick}
                  className="btn_menu flex lg:hidden flex-col gap-[3px] items-center justify-center cursor-pointer relative hover:translate-y-[-10%] duration-500 transition-all">

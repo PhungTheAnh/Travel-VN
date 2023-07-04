@@ -86,15 +86,15 @@ const ToursResult = (props:{btnFilter: any}) => {
   const btnResult1 = () => {
     btn1.current?.classList.add("hidden")
     btn2.current?.classList.remove("hidden")
-    toursResult1.current?.classList.add("hidden")
-    toursResult2.current?.classList.remove("hidden")
+    toursResult1.current?.classList.add("toursResult1")
+    toursResult2.current?.classList.add("toursResult2")
   }
 
   const btnResult2 = () => {
     btn1.current?.classList.remove("hidden")
     btn2.current?.classList.add("hidden")
-    toursResult1.current?.classList.remove("hidden")
-    toursResult2.current?.classList.add("hidden")
+    toursResult1.current?.classList.remove("toursResult1")
+    toursResult2.current?.classList.remove("toursResult2")
   }
   return (
     <div>
@@ -112,7 +112,7 @@ const ToursResult = (props:{btnFilter: any}) => {
           <AiOutlineUnorderedList size={30} color={"#4366c5"}/>
         </div>
       </div>
-      <div ref={toursResult1} className="toursResult1 w-full grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[15px] transition-all duration-300">
+      <div ref={toursResult1} className="w-full grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[15px]">
         {
           tours.map((tour: any) => {
               let htmlStars = []
@@ -152,7 +152,7 @@ const ToursResult = (props:{btnFilter: any}) => {
                     <div className="flex items-center justify-between font-medium">
                       <div className="text-sm text-primary">
                         <p>Giá</p>
-                        <p className="text-lg font-bold">{VND.format(tour.cost)}</p>
+                        <p className="text-lg leading-[1.5rem] md:leading-[1.75rem] font-bold">{VND.format(tour.cost)}</p>
                       </div>
                       <div>
                         <div className="flex gap-0.5 items-center">
@@ -161,7 +161,7 @@ const ToursResult = (props:{btnFilter: any}) => {
                         <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
                       </div>
                     </div>
-                    <Link href="#" className="text-white text-base flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px]">Đặt ngay</Link>
+                    <Link href="#" className="btnOrder1 text-white text-base w-full mx-auto transition-all duration-300 flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px]">Đặt ngay</Link>
                   </div>
                 </div>
               )
@@ -169,7 +169,7 @@ const ToursResult = (props:{btnFilter: any}) => {
           )
         }
       </div>
-      <div ref={toursResult2} className="toursResult2 w-full flex flex-col gap-[15px] transition-all duration-300">
+      <div ref={toursResult2} className="w-full flex max-w-[350px] mx-auto invisible h-0 opacity-0 flex-col gap-[15px] transition-all duration-300">
         {
           tours.map((tour: any) => {
               let htmlStars = []
@@ -224,7 +224,7 @@ const ToursResult = (props:{btnFilter: any}) => {
                         </div>
                         <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
                       </div>
-                      <Link href="#" className="w-1/2 md:w-full text-white text-base flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px]">Đặt ngay</Link>
+                      <Link href="#" className="btnOrder2 w-0 text-white text-sm flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px] transition-all duration-300">Đặt ngay</Link>
                     </div>
                   </div>
                 </div>

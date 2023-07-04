@@ -83,16 +83,16 @@ const ToursFilter = () => {
           <div>
             <Tab.Panels>
               {
-                places.map((result) => {
+                places.map((result, index) => {
                   return (
-                    <Tab.Panel key={result}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
+                    <Tab.Panel key={index}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
                   )
                 })
               }
               {
-                prices.map((result) => {
+                prices.map((result, index) => {
                   return (
-                    <Tab.Panel key={result}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
+                    <Tab.Panel key={index}><ToursResult btnFilter={btnFilter}/></Tab.Panel>
                   )
                 })
               }
