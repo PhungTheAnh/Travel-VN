@@ -4,33 +4,34 @@ import Link from "next/link";
 import {MdOutlineLocationOn} from "react-icons/md";
 import {BsArrowRightShort} from "react-icons/bs";
 import {Tab} from "@headlessui/react";
+import {Input} from "@nextui-org/react";
 
 const AddressTabsSearch = () => {
   const filters = {
     'Tất cả': [
       {
         id: 1,
-        name: "Hồ Hoàn Kiếm - Hà Nội",
-        address: "Hà Nội",
-        category: "hanoi",
-        image: "/places/hohoankiem.jpg",
+        name: "Chùa Bái Đính",
+        address: "Ninh Bình",
+        category: "ninhbinh",
+        image: "/places/ninhbinh1.jpg",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
       },
       {
         id: 2,
-        name: "Hồ Hoàn Kiếm - Hà Nội",
-        address: "Hội An",
-        category: "hoian",
-        image: "/places/hohoankiem.jpg",
+        name: "Tam Cốc - Bích Động - Ninh Bình",
+        address: "Ninh Bình",
+        category: "ninhbinh",
+        image: "/places/ninhbinh2.jpeg",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
 
       },
       {
         id: 3,
-        name: "Hồ Hoàn Kiếm - Hà Nội",
-        address: "Hà Nội",
-        category: "hanoi",
-        image: "/places/hohoankiem.jpg",
+        name: "Tràng An - Bái Đính",
+        address: "Ninh Bình",
+        category: "ninhbinh",
+        image: "/places/ninhbinh3.jpg",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
       },
       {
@@ -39,6 +40,89 @@ const AddressTabsSearch = () => {
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hohoankiem.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 5,
+        name: "Hồ Hoàn Kiếm - Hà Nội",
+        address: "Hà Nội",
+        category: "hanoi",
+        image: "/places/hoguom.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+
+      },
+      {
+        id: 6,
+        name: "Hồ Hoàn Kiếm - Hà Nội",
+        address: "Hà Nội",
+        category: "hanoi",
+        image: "/places/hoguom1.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 7,
+        name: "Hồ Hoàn Kiếm - Hà Nội",
+        address: "Hà Nội",
+        category: "hanoi",
+        image: "/places/hoguom.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 8,
+        name: "Vịnh Lan Hạ - Hạ Long Bay",
+        address: "Hải Phòng",
+        category: "haiphong",
+        image: "/places/halong.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 9,
+        name: "Vịnh Lan Hạ - Hạ Long Bay",
+        address: "Hải Phòng",
+        category: "haiphong",
+        image: "/places/halong1.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+
+      },
+      {
+        id: 10,
+        name: "Vịnh Lan Hạ - Hạ Long Bay",
+        address: "Hải Phòng",
+        category: "haiphong",
+        image: "/places/halong2.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 11,
+        name: "Vịnh Lan Hạ - Hạ Long Bay",
+        address: "Hải Phòng",
+        category: "haiphong",
+        image: "/places/halong4.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 12,
+        name: "Bản Ý - Linh Hồ",
+        address: "Sapa",
+        category: "sapa",
+        image: "/places/sapa2.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+      },
+      {
+        id: 12,
+        name: "Thung lũng Mường Hoa - Sapa",
+        address: "Sapa",
+        category: "sapa",
+        image: "/places/ruongbacthang5.jpg",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
+
+      },
+      {
+        id: 14,
+        name: "Ruộng bậc thang",
+        address: "Sapa",
+        category: "sapa",
+        image: "/places/ruongbacthang1.jpg",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus, possimus facere sit quasi, nisi saepe obcaecati sint modi explicabo ratione repellat at excepturi, consequatur doloribus voluptatibus ipsa velit molestias!"
       },
     ],
@@ -174,18 +258,29 @@ const AddressTabsSearch = () => {
   return (
     <Tab.Group>
       <Tab.List
-        className="relative w-full min-h-[73px] flex items-center gap-[30px] p-[15px] mb-[30px] bg-[#f2f6fc] shadow-[0_10px_20px_#00000011] rounded-xl">
-        {
-          Object.keys(filters).map((filter: any) => (
-            <Tab key={filter} className={({selected}) => classNames(
-              'text-[#252525] text-base relative px-4 py-2 transition-all duration-100 hover:border-b-[3px] hover:border-[#a6c3ea] outline-0',
-              selected
-                ? "border-b-[3px] border-[#4366c5] hover:border-[#4366c5]" : ""
-            )}>
-              {filter}
-            </Tab>
-          ))
-        }
+        className="relative w-full min-h-[73px] flex justify-between items-center p-[15px] mb-[30px] bg-[#f2f6fc] shadow-[0_10px_20px_#00000011] rounded-xl">
+        <div className="flex items-center gap-[30px]">
+          {
+            Object.keys(filters).map((filter: any) => (
+              <Tab key={filter} className={({selected}) => classNames(
+                'text-[#252525] text-base relative px-4 py-2 transition-all duration-100 hover:border-b-[3px] hover:border-[#a6c3ea] outline-0',
+                selected
+                  ? "border-b-[3px] border-[#4366c5] hover:border-[#4366c5]" : ""
+              )}>
+                {filter}
+              </Tab>
+            ))
+          }
+        </div>
+        <div className="ipAddressTabSearch">
+          <Input
+            clearable
+            size={"lg"}
+            contentRightStyling={false}
+            placeholder="Nhập từ khóa..."
+            className="!bg-white"
+          />
+        </div>
       </Tab.List>
       <Tab.Panels>
         {

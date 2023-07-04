@@ -61,7 +61,7 @@ const Header = () => {
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
             <p className="text-base xl:text-lg text-white">Địa điểm</p>
             <select className="py-[10px] px-[30px] w-full outline-0 border-0 rounded-[36px] text-base text-[#adadad]"
-                    name="address" id="">
+                    name="address">
               <option value="">Địa điểm</option>
               <option value="">Nam Định</option>
               <option value="">Hà Nội</option>

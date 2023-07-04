@@ -296,6 +296,9 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transform: translateZ(0);
 }
+.ipAddressTabSearch label{
+    background-color: white !important;
+}
 
 /* Tour Page */
 
