@@ -178,7 +178,7 @@ const AddressTabsSearch = () => {
         {
           Object.keys(filters).map((filter: any) => (
             <Tab key={filter} className={({selected}) => classNames(
-              'text-[#252525] text-base relative px-4 py-2 transition-all duration-100 hover:border-b-[3px] hover:border-[#a6c3ea]',
+              'text-[#252525] text-base relative px-4 py-2 transition-all duration-100 hover:border-b-[3px] hover:border-[#a6c3ea] outline-0',
               selected
                 ? "border-b-[3px] border-[#4366c5] hover:border-[#4366c5]" : ""
             )}>
