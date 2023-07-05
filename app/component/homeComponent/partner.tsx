@@ -62,28 +62,28 @@ const Partner = () => {
       <div ref={partnerMainRef} className="partners w-full h-full mb-[150px] transition-all duration-700 opacity-0 translate-y-[160px]">
         <Slider {...partnerSlick}>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
           <div className="w-full h-full !flex items-center justify-center pb-[30px] border-b border-[#94999f]">
-            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} className="w-[130px] h-[130px] rounded-full object-cover"/>
+            <Image src={"/partner/logo-pinterest.png"} alt={"Partner"} width={0} height={0} sizes={"100vh"} unoptimized className="w-[130px] h-[130px] rounded-full object-cover"/>
           </div>
         </Slider>
       </div>

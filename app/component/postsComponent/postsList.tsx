@@ -232,7 +232,7 @@ const PostsList = () => {
       <div key={key}
            className="group hover:shadow-[10px_10px_20px_rgba(0,0,0,0.2)] flex flex-col md:flex-row items-start justify-center w-full p-2.5 gap-5 rounded-lg bg-white shadow-[10px-10px-20px-rgba(0,0,0,0.05)] transition-all duration-300">
         <div className="w-full md:w-[40%] h-[300px] md:h-[230px] relative overflow-hidden">
-          <Image src={img} alt={""} width={0} height={0} sizes={"100vh"} className="w-full h-full object-cover rounded-lg"/>
+          <Image src={img} alt={""} width={0} height={0} sizes={"100vh"} unoptimized className="w-full h-full object-cover rounded-lg"/>
         </div>
         <div className="w-full md:w-[60%] flex flex-col gap-5">
           <div
@@ -349,7 +349,7 @@ const PostsList = () => {
                   return (
                     <div key={index} className="flex items-center justify-center h-[100px] sm:h-[150px] lg:h-[70px] w-full rounded-[5px] overflow-hidden">
                       <Link href={"#"} className="w-full h-full">
-                        <Image src={img.src} alt={"image"} width={0} height={0} sizes={"100vh"}  className="w-full h-full object-cover"/>
+                        <Image src={img.src} alt={"image"} width={0} height={0} sizes={"100vh"} unoptimized  className="w-full h-full object-cover"/>
                       </Link>
                     </div>
                   )

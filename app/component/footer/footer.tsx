@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="flex flex-col items-center justify-center bg-[#4366c5] w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:flex justify-between gap-[20px] items-start my-[40px] lg:my-[60px] w-[94%] lg:w-[90%] xl:w-[85%]">
         <Link href="/">
-          <Image src={"/footer/logo-VNTRAVEL.png"} alt={"Travel VN"} width={230} height={35}/>
+          <Image src={"/footer/logo-VNTRAVEL.png"} alt={"Travel VN"} width={230} height={35} unoptimized/>
         </Link>
         <div className="flex flex-col justify-center gap-[15px]">
           <Link href="/">

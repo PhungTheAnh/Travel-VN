@@ -556,7 +556,7 @@ const ToursFilter = () => {
       <div key={idx}
            className="relative group w-full lg:h-full bg-white flex flex-col overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] md:max-w-[420px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
         <div className='relative h-[250px] w-full rounded-lg overflow-hidden shadow-md'>
-          <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"}
+          <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"} unoptimized
                  className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
           <div
             className="absolute bottom-0 right-0 p-2.5 rounded-tl-[12px] bg-white flex items-center gap-[10px]">
@@ -616,7 +616,7 @@ const ToursFilter = () => {
            className="relative group w-full lg:h-full bg-white flex flex-col md:flex-row overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
         <div
           className='relative h-[250px] w-full md:w-[30%] rounded-lg overflow-hidden shadow-md'>
-          <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"}
+          <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"} unoptimized
                  className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
         </div>
         <div className="flex flex-col gap-[10px] w-full md:w-[50%]">
@@ -772,7 +772,7 @@ const ToursFilter = () => {
                                      className="relative group w-full lg:h-full bg-white flex flex-col md:flex-row overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
                                   <div
                                     className='relative h-[250px] w-full md:w-[30%] rounded-lg overflow-hidden shadow-md'>
-                                    <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"}
+                                    <Image src={tour.image} alt={tour.name} width={0} height={0} sizes={"100vh"} unoptimized
                                            className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
                                   </div>
                                   <div className="flex flex-col gap-[10px] w-full md:w-[50%]">

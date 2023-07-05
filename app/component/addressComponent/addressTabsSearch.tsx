@@ -293,7 +293,7 @@ const AddressTabsSearch = () => {
                     <div key={index}
                          className="relative group w-full bg-white flex flex-col overflow-hidden items-center content-start rounded-lg p-[15px] gap-[15px] md:max-w-[420px] shadow-[0_10px_20px_#00000022] transition-all duration-300 hover:shadow-[0_10px_20px_#00000066] hover:translate-y-[-8px]">
                       <div className='h-[250px] w-full rounded-lg overflow-hidden'>
-                        <Image src={filter.image} alt={filter.name} width={0} height={0} sizes={"100vh"}
+                        <Image src={filter.image} alt={filter.name} width={0} height={0} sizes={"100vh"} unoptimized
                                className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
                       </div>
                       <div className="flex flex-col gap-[10px] w-full">

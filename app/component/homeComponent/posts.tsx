@@ -77,7 +77,7 @@ const Posts = () => {
         <Slider {...postSlick}>
           <div className="group hover:translate-y-[-30px] h-[460px] md:h-[500px] w-[439px] rounded-xl relative transition-all duration-700">
             <div className="absolute top-0 left-0 h-full w-full overflow-hidden z-[1] rounded-xl transition-all duration-500">
-              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
+              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"} unoptimized/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
               <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
@@ -90,7 +90,7 @@ const Posts = () => {
           </div>
           <div className="group hover:translate-y-[-30px] h-[460px] md:h-[500px] w-[439px] rounded-xl relative transition-all duration-700">
             <div className="absolute top-0 left-0 h-full w-full overflow-hidden z-[1] rounded-xl transition-all duration-500">
-              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/nhatrang3.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
+              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/nhatrang3.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"} unoptimized/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
               <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
@@ -103,7 +103,7 @@ const Posts = () => {
           </div>
           <div className="group hover:translate-y-[-30px] h-[460px] md:h-[500px] w-[439px] rounded-xl relative transition-all duration-700">
             <div className="absolute top-0 left-0 h-full w-full overflow-hidden z-[1] rounded-xl transition-all duration-500">
-              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
+              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"} unoptimized/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
               <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
@@ -116,7 +116,7 @@ const Posts = () => {
           </div>
           <div className="group hover:translate-y-[-30px] h-[460px] md:h-[500px] w-[439px] rounded-xl relative transition-all duration-700">
             <div className="absolute top-0 left-0 h-full w-full overflow-hidden z-[1] rounded-xl transition-all duration-500">
-              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
+              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/ninhbinh2.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"} unoptimized/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
               <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>
@@ -129,7 +129,7 @@ const Posts = () => {
           </div>
           <div className="group hover:translate-y-[-30px] h-[460px] md:h-[500px] w-[439px] rounded-xl relative transition-all duration-700">
             <div className="absolute top-0 left-0 h-full w-full overflow-hidden z-[1] rounded-xl transition-all duration-500">
-              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"}/>
+              <Image className="group-hover:scale-[1.1] w-full h-full object-cover rounded-xl transition-all duration-300" src={"/posts/phocohoian4.jpg"} alt={"Ninh Bình"} width={0} height={0} sizes={"100vh"} unoptimized/>
             </div>
             <div className="transition-all duration-300 absolute bottom-0 left-0 z-[2] w-full p-[20px] xl:p-[30px] rounded-xl bg-[#0000004d] group-hover:bg-[#00000099] cursor-grab">
               <Link href="#"><p className="cursor-pointer text-lg lg:text-xl xl:text-[24px] text-white hover:text-[#5d85d4] font-semibold mb-[15px] transition-all duration-300">Change your place and get the fresh air</p></Link>

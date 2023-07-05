@@ -45,14 +45,14 @@ const AboutIntroduce = () => {
                 khách hàng của mình dịch vụ đặc biệt trên mọi bước đường.</p>
             </div>
             <div ref={imgIntroduce1Ref} className="w-full md:w-1/2 h-[300px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden opacity-0 scale-[0.6] transition-all duration-1000">
-              <Image src={"/aboutme/hoguom.jpg"} alt={""} width={0} height={0} sizes={"100vh"}
+              <Image src={"/aboutme/hoguom.jpg"} alt={""} width={0} height={0} sizes={"100vh"} unoptimized
                      className="w-full h-full object-cover"/>
             </div>
           </div>
           {/**/}
           <div className="flex md:flex-row flex-col-reverse items-center justify-center">
             <div ref={imgIntroduce2Ref} className="w-full md:w-1/2 h-[300px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden opacity-0 scale-[0.6] transition-all duration-1000">
-              <Image src={"/aboutme/hoguom.jpg"} alt={""} width={0} height={0} sizes={"100vh"}
+              <Image src={"/aboutme/hoguom.jpg"} alt={""} width={0} height={0} sizes={"100vh"} unoptimized
                      className="w-full h-full object-cover"/>
             </div>
             <div ref={contentIntroduce2Ref} className="flex gap-[15px] flex-col w-full md:w-1/2 p-[15px] md:p-[30px] xl:p-[60px] translate-x-[-100px] opacity-0 transition-all duration-1000">

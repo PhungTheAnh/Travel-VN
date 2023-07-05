@@ -5,7 +5,7 @@ const AboutCompany = () => {
   const AboutCompanySection = (src: string ,title: string, content: string) => (
     <div className="p-[15px] flex flex-col gap-[30px] items-center w-full">
       <div className="w-[150px] h-[150px]">
-        <Image src={src} width={0} height={0} sizes={"100vh"} className="w-full h-full object-cover" alt={""}/>
+        <Image src={src} width={0} height={0} sizes={"100vh"} unoptimized className="w-full h-full object-cover" alt={""}/>
       </div>
       <div className="flex flex-col gap-[15px] items-center justify-center">
         <p className="text-[#474d4b] text-[24px] font-semibold text-center leading-[27px]">{title}</p>
