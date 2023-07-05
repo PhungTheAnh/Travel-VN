@@ -72,7 +72,6 @@ const Header = () => {
         <div
           className="flex lg:flex-row flex-col items-center justify-between gap-[20px] lg:gap-[30px] w-[80%] lg:w-full shadow-[0_0_20px_#00000099] bg-[#4366c5ab] p-[30px] lg:p-[20px] rounded-xl">
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
-            {/*<p className="text-base xl:text-lg text-white">Địa điểm</p>*/}
             <FormControl className="w-full rounded-[36px] bg-white border-0 outline-0" size="small">
               <InputLabel>Địa điểm</InputLabel>
               <Select
@@ -129,7 +128,7 @@ const Header = () => {
       </div>
       {/**/}
       <div className="w-full mx-auto py-[35px] rounded-[12px] header-scroll transition-all duration-500">
-        <div className={"w-[95%] 2xl:w-[76%] mx-auto flex justify-between"}>
+        <div className={"w-[94%] 2xl:w-[76%] mx-auto flex justify-between"}>
           <div className="flex gap-[10px] items-center">
             <div onClick={MenuClick}
                  className="btn_menu flex lg:hidden flex-col gap-[3px] items-center justify-center cursor-pointer relative hover:translate-y-[-10%] duration-500 transition-all">

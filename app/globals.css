@@ -273,7 +273,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .posts .slick-list {
-    margin: 0 -15px;
+    margin: 0;
     padding: 30px 0 50px !important;
 }
 
