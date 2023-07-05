@@ -58,7 +58,7 @@ const Profile = () => {
                     width={0}
                     height={0}
                     sizes={"100vh"}
-                    className="z-[1] w-[142px] h-[142px] rounded-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] group-hover:backdrop-blur-[2px]"
+                    className="z-[1] w-[142px] h-[142px] rounded-full object-cover absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] group-hover:backdrop-blur-[2px]"
                   />
                 )}
               </div>
