@@ -8,6 +8,7 @@ import {GrFormClose} from "react-icons/gr";
 import Link from "next/link";
 import LinkHeader from "@/app/component/header/linkHeader";
 import LinkHeaderMobile from "@/app/component/header/linkHeaderMobile";
+import LinkUser from "@/app/component/header/linkUser";
 
 
 const Header = () => {
@@ -20,7 +21,10 @@ const Header = () => {
   }
 
   const BtnClickUserMenu = () => {
-    userMenuRef.current?.classList.toggle("userMenu-active")
+    userMenuRef.current?.classList.add("userMenu-active")
+  }
+  const BtnCloseUserMenu = () => {
+    userMenuRef.current?.classList.remove("userMenu-active")
   }
 
   const MenuClick = () => {
@@ -35,8 +39,10 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("click", (e) => {
       if (e.target === menuRef.current) {
-        menuRef.current?.classList.remove("menu-active")
-        document.body.style.overflowY = "scroll"
+        MenuClose()
+      }
+      if (e.target === userMenuRef.current){
+        BtnCloseUserMenu()
       }
     })
     const onScroll: EventListener = async () => {
@@ -53,9 +59,8 @@ const Header = () => {
     <div ref={headerRef} className='w-full fixed top-0 left-0 z-[99] bg-transparent'>
       {/*search*/}
       <div ref={searchMenuRef}
-           className="searchMenu flex items-center justify-center opacity-0 invisible z-[1] fixed left-[50%] w-[98%] md:w-[80%] lg:w-[84%] xl:w-[70%] translate-y-[-50%] translate-x-[-50%] top-1/2 transition-all duration-300">
-        <div className="fixed w-full h-full top-0 left-0 bg-transparent">
-        </div>
+           className="searchMenu flex items-center justify-center opacity-0 invisible z-[1] fixed top-[30%] lg:top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] w-[98%] md:w-[80%] lg:w-[84%] xl:w-[70%] transition-all duration-300">
+        <div className="fixed w-full h-full top-0 left-0 bg-transparent"></div>
         <div
           className="flex lg:flex-row flex-col items-center justify-between gap-[20px] lg:gap-[30px] w-[80%] lg:w-full shadow-[0_0_20px_#00000099] bg-[#4366c5ab] p-[30px] lg:p-[20px] rounded-xl">
           <div className="flex flex-col justify-center items-start gap-[10px] w-full">
@@ -135,20 +140,14 @@ const Header = () => {
                 onClick={BtnClickUserMenu}
                 className={"cursor-pointer relative hover:translate-y-[-10%] btnUserMenu transition-all duration-500"}
                 color={"white"} size={22}/>
-              <div ref={userMenuRef}
-                   className="userMenu z-10 w-[230px] p-[15px] rounded-xl absolute right-0 top-[33px] flex flex-col gap-2.5 transition-all duration-300">
-                <Link className="cursor-pointer w-full" href="/user/profile"><p
-                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Thông
-                  tin cá nhân</p></Link>
-                <Link className="cursor-pointer w-full" href="/user/login"><p
-                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng
-                  nhập</p></Link>
-                <Link className="cursor-pointer w-full" href="/user/register"><p
-                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de]">Đăng
-                  ký</p></Link>
-                <p
-                  className="text-base text-[#fafafa] rounded-lg px-2.5 py-2 transition-all duration-300 hover:bg-[#7ca4de] cursor-pointer">Đăng
-                  xuất</p>
+              <div ref={userMenuRef} className="userMenu fixed w-full h-full bottom-0 left-0 bg-transparent z-[10]">
+                <div
+                     className="userMenuForm z-10 w-[230px] p-[15px] rounded-xl absolute right-[38px] top-[75px] flex flex-col gap-2.5 transition-all duration-300">
+                  <LinkUser href={"/user/profile"} text={"Thông tin cá nhân"} btnClose={BtnCloseUserMenu} />
+                  <LinkUser href={"/user/login"} text={"Đăng nhập"} btnClose={BtnCloseUserMenu} />
+                  <LinkUser href={"/user/register"} text={"Đăng ký"} btnClose={BtnCloseUserMenu} />
+                  <LinkUser href={"/"} text={"Đăng xuất"} btnClose={BtnCloseUserMenu} />
+                </div>
               </div>
             </div>
           </div>

@@ -6,7 +6,6 @@ const Input = dynamic(import('@nextui-org/react').then(mod => mod.Input), { ssr:
 
 import {BiPurchaseTagAlt, BiSearch} from "react-icons/bi";
 import {Tab} from "@headlessui/react";
-// import ToursResult from "@/app/component/toursComponent/toursResult";
 import {FaFilter, FaUsers} from "react-icons/fa";
 import {BsGrid3X3Gap} from "react-icons/bs";
 import {AiFillStar, AiOutlineUnorderedList} from "react-icons/ai";

@@ -36,7 +36,7 @@ const Profile = () => {
   // @ts-ignore
   return (
     <div className="w-full h-full">
-      <BannerPage pageTitle={"Thông tin cá nhân"} />
+      <BannerPage pageTitle={"Thông tin cá nhân"} banner={" bg-[url('/banner/dalat2.jpg')]"}/>
       <div className="w-full py-[50px] xl:py-[80px] bg-white">
         <div className="w-[95%] xl:max-w-[1350px] mx-auto flex md:flex-row flex-col justify-between gap-[30px] md:gap-[20px] lg:gap-[30px]">
           <div

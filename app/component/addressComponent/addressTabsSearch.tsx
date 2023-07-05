@@ -258,8 +258,8 @@ const AddressTabsSearch = () => {
   return (
     <Tab.Group>
       <Tab.List
-        className="relative w-full min-h-[73px] flex justify-between items-center p-[15px] mb-[30px] bg-[#f2f6fc] shadow-[0_10px_20px_#00000011] rounded-xl">
-        <div className="flex items-center gap-[30px]">
+        className="relative w-full min-h-[73px] flex flex-col lg:flex-row justify-between items-center gap-[15px] lg:gap-0 p-[15px] mb-[30px] bg-[#f2f6fc] shadow-[0_10px_20px_#00000011] rounded-xl">
+        <div className="flex flex-wrap justify-center lg:flex-nowrap items-center gap-[10px] lg:gap-[30px]">
           {
             Object.keys(filters).map((filter: any) => (
               <Tab key={filter} className={({selected}) => classNames(
@@ -272,7 +272,7 @@ const AddressTabsSearch = () => {
             ))
           }
         </div>
-        <div className="ipAddressTabSearch">
+        <div className="ipAddressTabSearch w-full lg:w-auto">
           <Input
             clearable
             size={"lg"}
