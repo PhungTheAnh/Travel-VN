@@ -85,7 +85,7 @@ body {
     transform-origin: top center;
 }
 
-.header-scroll .userMenuForm{
+.header-scroll .userMenuForm {
     background: linear-gradient(45deg, #5d85d4, #3f59b6);
     box-shadow: 0 10px 20px #00000033;
     border: none;
@@ -109,6 +109,27 @@ body {
     opacity: 1;
     transform: translateX(-50%) rotateX(0deg) !important;
     transition: all 0.25s linear;
+}
+
+.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 10px 30px;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none;
+    padding: 0 30px;
+}
+
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+    left: 17px;
+    color: #adadad;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #4366c5;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    display: none;
 }
 
 /*scrollbar*/
@@ -299,7 +320,8 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transform: translateZ(0);
 }
-.ipAddressTabSearch label{
+
+.ipAddressTabSearch label {
     background-color: white !important;
 }
 
@@ -353,44 +375,46 @@ body::-webkit-scrollbar-thumb {
 
 /*posts_page*/
 
-.posts_page .btn_share .share{
+.posts_page .btn_share .share {
     opacity: 0;
     visibility: hidden;
     transform: rotateX(90deg);
 }
 
-.posts_page .btn_share:hover .share{
+.posts_page .btn_share:hover .share {
     opacity: 1;
     overflow: hidden;
     visibility: visible;
     transform: rotateX(0deg);
 }
 
-.nextui-c-eXOOPO-lkBNdM-isTextarea-false{
+.nextui-c-eXOOPO-lkBNdM-isTextarea-false {
     padding: 10px !important;
 }
-.nextui-c-iwmZdB-iiIdOsz-css{
+
+.nextui-c-iwmZdB-iiIdOsz-css {
     width: 100% !important;
 }
-.posts_page .postReadMore .btn .active, .posts_page .tagReadMore .btn .active, .posts_page .imgReadMore .btn .active{
+
+.posts_page .postReadMore .btn .active, .posts_page .tagReadMore .btn .active, .posts_page .imgReadMore .btn .active {
     transform: rotate(90deg);
     transition: all 0.25s linear;
 }
 
-.posts_page .postReadMore .content .active, .posts_page .tagReadMore .content .active, .posts_page .imgReadMore .content .active{
+.posts_page .postReadMore .content .active, .posts_page .tagReadMore .content .active, .posts_page .imgReadMore .content .active {
     height: 100%;
     opacity: 1;
     visibility: visible;
 }
 
 @media screen and (max-width: 480px) {
-    .posts_page .imgReadMore .content .active{
+    .posts_page .imgReadMore .content .active {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media screen and (max-width: 320px) {
-    .posts_page .imgReadMore .content .active{
+    .posts_page .imgReadMore .content .active {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
