@@ -2,9 +2,11 @@
 
 import React, {useEffect, useRef} from 'react';
 import Image from "next/image";
+import scrollEffect from "@/app/component/function/scrollEffect";
 
 const BannerHome = () => {
   const bannerRef = useRef<HTMLInputElement | null>(null)
+  const personRef = useRef<HTMLInputElement | null>(null)
   useEffect(() => {
     const effect = Array.from(document.getElementsByClassName('effect') as HTMLCollectionOf<HTMLElement>)
     let xValue = 0
@@ -26,6 +28,18 @@ const BannerHome = () => {
         el.style.transition = `all 0.3s ease-in-out`
       })
     }
+    let callback = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          personRef.current?.classList.add("person-load")
+        } else {
+          personRef.current?.classList.remove("person-load")
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback);
+    // @ts-ignore
+    observer.observe(personRef.current);
     bannerRef.current?.addEventListener("mousemove", MouseMove)
     bannerRef.current?.addEventListener("mouseleave", MouseLeave)
   }, [])
@@ -41,15 +55,15 @@ const BannerHome = () => {
           className="text-white text-[3rem] sm:text-[6rem] xl:text-[8rem] font-normal tracking-[3px] md:tracking-[6px] leading-[50px] sm:leading-[100px] md:leading-[150px]">Viet
           Nam</p>
       </div>
-      <div data-speedx="0.1" data-speedy="0.1" className="person effect z-[9] absolute  w-full h-full ">
+      <div ref={personRef} data-speedx="0.13" data-speedy="0.1" className="person effect z-[9] absolute  w-full h-full ">
         <Image className="w-full h-full object-cover lg:object-fill" src={"/moutain/person.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>
-      <div data-speedx="0.1" data-speedy="0.1" className="moutain1 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
+      <div data-speedx="0.1" data-speedy="0.12" className="moutain1 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
         <Image className="w-full h-full" src={"/moutain/moutain1.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>
-      <div data-speedx="0.1" data-speedy="0.1" className="moutain2 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
+      <div data-speedx="0.1" data-speedy="0.12" className="moutain2 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
         <Image className="w-full h-full" src={"/moutain/moutain2.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>

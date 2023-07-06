@@ -179,6 +179,10 @@ body::-webkit-scrollbar-thumb {
 
 .home_page .person {
     top: calc(50% + 3%);
+    left:0
+}
+.home_page .person-load {
+    transition: all 0.5s linear;
     left:50%
 }
 
