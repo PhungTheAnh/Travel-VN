@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb {
 }
 .home_page .person-load {
     transition: all 0.5s linear;
-    left:50%
+    left:50%;
 }
 
 .home_page .moutain1 {
@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb {
 
 .tours .slick-track {
     display: flex !important;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .tours .slick-slider .slick-track, .slick-slider .slick-list, .evaluate .slick-slider .slick-track, .slick-slider .slick-list {
