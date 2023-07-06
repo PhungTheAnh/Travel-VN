@@ -7,6 +7,8 @@ import scrollEffect from "@/app/component/function/scrollEffect";
 const BannerHome = () => {
   const bannerRef = useRef<HTMLInputElement | null>(null)
   const personRef = useRef<HTMLInputElement | null>(null)
+  const title1Ref = useRef<HTMLInputElement | null>(null)
+  const title2Ref = useRef<HTMLInputElement | null>(null)
   useEffect(() => {
     const effect = Array.from(document.getElementsByClassName('effect') as HTMLCollectionOf<HTMLElement>)
     let xValue = 0
@@ -50,8 +52,8 @@ const BannerHome = () => {
                unoptimized/>
       </div>
       <div data-speedx="0.1" data-speedy="0.1" className="title effect z-[7] absolute top-[40%] left-1/2 w-full flex flex-col items-center justify-center">
-        <p className="text-white text-[3rem] xl:text-[4rem] font-light tracking-[3px]">Travel</p>
-        <p
+        <p ref={title1Ref} className="text-white text-[3rem] xl:text-[4rem] font-light tracking-[3px]">Travel</p>
+        <p ref={title2Ref}
           className="text-white text-[3rem] sm:text-[6rem] xl:text-[8rem] font-normal tracking-[3px] md:tracking-[6px] leading-[50px] sm:leading-[100px] md:leading-[150px]">Viet
           Nam</p>
       </div>
