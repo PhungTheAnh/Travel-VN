@@ -45,7 +45,7 @@ const BannerHome = () => {
   }, [])
   return (
     <div ref={bannerRef} className="relative bg-[url('/banner/bg.png')] bg-no-repeat bg-cover w-full h-[100vh] flex items-center justify-center overflow-hidden">
-      <div data-speedx="0.3" data-speedy="0.1" className="banner effect z-[1] absolute top-[50%] left-[50%] w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full ">
+      <div data-speedx="0.3" data-speedy="0.1" className="banner effect z-[1] absolute top-[50%] left-[50%] w-[900px] sm:w-[130%] h-full ">
         <Image className="w-full h-full" src={"/banner/bg.png"} alt={""} width={0} height={0} sizes="100vh"
                unoptimized/>
       </div>
@@ -59,11 +59,11 @@ const BannerHome = () => {
         <Image className="w-full h-full object-cover lg:object-fill" src={"/moutain/person.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>
-      <div data-speedx="0.1" data-speedy="0.12" className="moutain1 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
+      <div data-speedx="0.1" data-speedy="0.12" className="moutain1 effect z-[8] absolute w-[900px] sm:w-[130%] h-full">
         <Image className="w-full h-full" src={"/moutain/moutain1.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>
-      <div data-speedx="0.1" data-speedy="0.12" className="moutain2 effect z-[8] absolute w-[1100px] sm:w-[1200px] md:w-[1400px] lg:w-[1700px] xl:w-[2000px] 2xl:w-[2400px] h-full">
+      <div data-speedx="0.1" data-speedy="0.12" className="moutain2 effect z-[8] absolute w-[900px] sm:w-[130%] h-full">
         <Image className="w-full h-full" src={"/moutain/moutain2.png"} alt={""} width={0} height={0}
                sizes="100vh" unoptimized/>
       </div>
