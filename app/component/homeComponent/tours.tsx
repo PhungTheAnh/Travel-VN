@@ -87,7 +87,7 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+            <Link href="#"><p className="text-darkCharcoal text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
               Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
@@ -131,7 +131,7 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+            <Link href="#"><p className="text-darkCharcoal text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
               Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
@@ -175,7 +175,7 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+            <Link href="#"><p className="text-darkCharcoal text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
               Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
@@ -219,7 +219,7 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+            <Link href="#"><p className="text-darkCharcoal text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
               Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>
@@ -263,7 +263,7 @@ const Tours = () => {
                      sizes="100vw"
                      className="w-full h-full object-cover rounded-xl "></Image>
             </div>
-            <Link href="#"><p className="text-[#333] text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
+            <Link href="#"><p className="text-darkCharcoal text-[24px] font-bold truncate">Hà Nội - Cố Đô Huế - Đồi Vọng Cảnh - Chùa
               Thiên Mụ</p></Link>
             <div className="flex gap-[5px] items-center mb-[6px]">
               <CiTimer size={16} color={"#4366c5"}/>

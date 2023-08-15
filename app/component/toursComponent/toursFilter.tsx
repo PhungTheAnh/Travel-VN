@@ -570,16 +570,16 @@ const ToursFilter = () => {
           <div className="flex flex-col gap-[5px] w-full mb-[15px]">
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <FiClock size={16} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">{tour.startDay} - </p>
-              <p className="text-sm text-[#333333] font-normal">{tour.endDay}</p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.startDay} - </p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.endDay}</p>
             </div>
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <MdOutlineLocationOn size={18} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">Địa điểm: {tour.address}</p>
+              <p className="text-sm text-darkCharcoal font-normal">Địa điểm: {tour.address}</p>
             </div>
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <BiPurchaseTagAlt size={16} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">{tour.tags}</p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.tags}</p>
             </div>
           </div>
           <div className="flex items-center justify-between font-medium">
@@ -592,7 +592,7 @@ const ToursFilter = () => {
               <div className="flex gap-0.5 items-center">
                 {htmlStars}
               </div>
-              <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
+              <p className="text-darkCharcoal text-xs font-normal">({tour.comments} đánh giá)</p>
             </div>
           </div>
           <Link href="#"
@@ -625,26 +625,26 @@ const ToursFilter = () => {
           <div className="flex flex-col gap-[5px] w-full md:mb-[15px]">
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <FiClock size={16} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">{tour.startDay} - </p>
-              <p className="text-sm text-[#333333] font-normal">{tour.endDay}</p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.startDay} - </p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.endDay}</p>
             </div>
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <MdOutlineLocationOn size={18} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">Địa điểm: {tour.address}</p>
+              <p className="text-sm text-darkCharcoal font-normal">Địa điểm: {tour.address}</p>
             </div>
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <BiPurchaseTagAlt size={16} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">{tour.tags}</p>
+              <p className="text-sm text-darkCharcoal font-normal">{tour.tags}</p>
             </div>
             <div className="flex items-center gap-[6px] text-sm text-[#555]">
               <FaUsers size={16} color="#333333"/>
-              <p className="text-sm text-[#333333] font-normal">Số người: {tour.members}</p>
+              <p className="text-sm text-darkCharcoal font-normal">Số người: {tour.members}</p>
             </div>
             <div className="md:hidden flex flex-col items-start justify-center">
               <div className="flex gap-0.5 items-center">
                 {htmlStars}
               </div>
-              <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
+              <p className="text-darkCharcoal text-xs font-normal">({tour.comments} đánh giá)</p>
             </div>
           </div>
         </div>
@@ -658,7 +658,7 @@ const ToursFilter = () => {
               <div className="flex gap-0.5 items-center">
                 {htmlStars}
               </div>
-              <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
+              <p className="text-darkCharcoal text-xs font-normal">({tour.comments} đánh giá)</p>
             </div>
             <Link href="#"
                   className="btnOrder2 w-0 text-white text-sm flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px] transition-all duration-300">Đặt
@@ -679,7 +679,7 @@ const ToursFilter = () => {
         <div
           ref={menuFilter}
           className="toursFilter lg:h-full transition-all duration-150 lg:opacity-100 lg:visible lg:rotate-0 w-full lg:w-1/4 relative lg:sticky left-0 lg:top-[100px] flex flex-col items-center justify-center rounded-xl overflow-hidden bg-[#f2f6fc] shadow-[0_0px_20px_#00000022]">
-          <p className="text-2xl text-[#333] py-[15px] font-semibold">Lọc thông tin</p>
+          <p className="text-2xl text-darkCharcoal py-[15px] font-semibold">Lọc thông tin</p>
           <div className="bg-[#a6c3ea] p-[30px] w-full">
             <Input
               size={"lg"}
@@ -781,26 +781,26 @@ const ToursFilter = () => {
                                     <div className="flex flex-col gap-[5px] w-full md:mb-[15px]">
                                       <div className="flex items-center gap-[6px] text-sm text-[#555]">
                                         <FiClock size={16} color="#333333"/>
-                                        <p className="text-sm text-[#333333] font-normal">{tour.startDay} - </p>
-                                        <p className="text-sm text-[#333333] font-normal">{tour.endDay}</p>
+                                        <p className="text-sm text-darkCharcoal font-normal">{tour.startDay} - </p>
+                                        <p className="text-sm text-darkCharcoal font-normal">{tour.endDay}</p>
                                       </div>
                                       <div className="flex items-center gap-[6px] text-sm text-[#555]">
                                         <MdOutlineLocationOn size={18} color="#333333"/>
-                                        <p className="text-sm text-[#333333] font-normal">Địa điểm: {tour.address}</p>
+                                        <p className="text-sm text-darkCharcoal font-normal">Địa điểm: {tour.address}</p>
                                       </div>
                                       <div className="flex items-center gap-[6px] text-sm text-[#555]">
                                         <BiPurchaseTagAlt size={16} color="#333333"/>
-                                        <p className="text-sm text-[#333333] font-normal">{tour.tags}</p>
+                                        <p className="text-sm text-darkCharcoal font-normal">{tour.tags}</p>
                                       </div>
                                       <div className="flex items-center gap-[6px] text-sm text-[#555]">
                                         <FaUsers size={16} color="#333333"/>
-                                        <p className="text-sm text-[#333333] font-normal">Số người: {tour.members}</p>
+                                        <p className="text-sm text-darkCharcoal font-normal">Số người: {tour.members}</p>
                                       </div>
                                       <div className="md:hidden flex flex-col items-start justify-center">
                                         <div className="flex gap-0.5 items-center">
                                           {htmlStars}
                                         </div>
-                                        <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
+                                        <p className="text-darkCharcoal text-xs font-normal">({tour.comments} đánh giá)</p>
                                       </div>
                                     </div>
                                   </div>
@@ -814,7 +814,7 @@ const ToursFilter = () => {
                                         <div className="flex gap-0.5 items-center">
                                           {htmlStars}
                                         </div>
-                                        <p className="text-[#333333] text-xs font-normal">({tour.comments} đánh giá)</p>
+                                        <p className="text-darkCharcoal text-xs font-normal">({tour.comments} đánh giá)</p>
                                       </div>
                                       <Link href="#"
                                             className="btnOrder2 w-0 text-white text-sm flex justify-center items-center bg-[#4366c5] rounded-lg p-[15px] transition-all duration-300">Đặt

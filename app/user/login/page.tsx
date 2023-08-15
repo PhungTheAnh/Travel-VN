@@ -14,7 +14,7 @@ const Login = () => {
           <InputUser name={'Mật khẩu'}/>
           <div className="flex gap-[8px] items-center justify-start w-full">
             <input type="checkbox" className="cursor-pointer"/>
-            <p className="text-[#333333] text-sm md:text-base font-semibold leading-[25px]">Nhớ mật khẩu</p>
+            <p className="text-darkCharcoal text-sm md:text-base font-semibold leading-[25px]">Nhớ mật khẩu</p>
           </div>
           <p className="w-full text-white py-2.5 px-5 text-lg font-semibold rounded-lg bg-[#4366c5] text-center cursor-pointer">{pageTitle}</p>
           <div className="w-full flex justify-between">

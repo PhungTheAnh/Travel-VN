@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "primary": "#4366c5"
+        "primary": "#4366c5",
+        "darkCharcoal":"#333333",
+        "graniteGray":"#666666",
       },
       lineClamp: {
         8: "8",

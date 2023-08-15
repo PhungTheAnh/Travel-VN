@@ -97,21 +97,21 @@ const Profile = () => {
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Họ và tên</p>
                       <input type="text"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="flex flex-col gap-2.5 w-full">
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Email</p>
                       <input type="email"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="flex flex-col gap-2.5 w-full">
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Số điện thoại</p>
                       <input type="text"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="w-full flex items-center justify-end">
@@ -130,21 +130,21 @@ const Profile = () => {
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Mật khẩu cũ</p>
                       <input type="text"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="flex flex-col gap-2.5 w-full">
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Mật khẩu mới</p>
                       <input type="email"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="flex flex-col gap-2.5 w-full">
                     <div className="w-full flex justify-between items-center gap-[5px]">
                       <p className="text-[#252525] text-lg font-semibold w-[40%] md:w-[45%] lg:w-[40%]">Nhập lại mật khẩu mới</p>
                       <input type="text"
-                             className="w-full border border-[#7ca4de] text-base text-[#333333] p-2.5 outline-0 rounded-lg"/>
+                             className="w-full border border-[#7ca4de] text-base text-darkCharcoal p-2.5 outline-0 rounded-lg"/>
                     </div>
                   </div>
                   <div className="w-full flex items-center justify-end">

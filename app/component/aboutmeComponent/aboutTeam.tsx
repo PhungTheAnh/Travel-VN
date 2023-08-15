@@ -21,7 +21,7 @@ const AboutTeam = () => {
         <div ref={titleServiceRef} className="text-left md:w-1/2 mt-[30] md:mr-[50px] flex flex-col gap-[15px] opacity-0 translate-x-[-160px] transition-all duration-1000">
           <p className=" text-[#252525] text-center md:text-left text-[35px] md:text-[40px] xl:text-[45px] font-semibold tracking-[2px]">Team của
             chúng tôi</p>
-          <p className=" text-[#333333] text-left text-base leading-[25px] mb-[15px]">
+          <p className=" text-darkCharcoal text-left text-base leading-[25px] mb-[15px]">
             Chúng tôi là một nhóm nhỏ nhưng hùng mạnh gồm những người đam mê du lịch. Trong số chúng tôi có những người
             lập kế hoạch du lịch, nhà tiếp thị, nhà văn, nhà thiết kế, người mơ mộng và khách du lịch, giống như bạn!
           </p>

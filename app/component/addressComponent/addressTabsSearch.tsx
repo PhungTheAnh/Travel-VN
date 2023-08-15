@@ -298,7 +298,7 @@ const AddressTabsSearch = () => {
                       </div>
                       <div className="flex flex-col gap-[10px] w-full">
                         <Link href="#"
-                              className="text-2xl w-full text-[#333] text-left font-bold line-clamp-1">{filter.name}</Link>
+                              className="text-2xl w-full text-darkCharcoal text-left font-bold line-clamp-1">{filter.name}</Link>
                         <div className="flex items-center gap-[6px] text-sm text-[#555]">
                           <MdOutlineLocationOn size={18} color="#555"/>
                           <p>{filter.address}</p>
