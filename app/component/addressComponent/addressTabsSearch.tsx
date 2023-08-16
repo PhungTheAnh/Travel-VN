@@ -12,6 +12,7 @@ const AddressTabsSearch = () => {
       {
         id: 1,
         name: "Chùa Bái Đính",
+        slug: "chua-bai-dinh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh1.jpg",
@@ -20,6 +21,7 @@ const AddressTabsSearch = () => {
       {
         id: 2,
         name: "Tam Cốc - Bích Động - Ninh Bình",
+        slug: "tam-coc-bich-dong-ninh-binh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh2.jpeg",
@@ -29,6 +31,7 @@ const AddressTabsSearch = () => {
       {
         id: 3,
         name: "Tràng An - Bái Đính",
+        slug: "trang-an-bai-dinh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh3.jpg",
@@ -37,6 +40,7 @@ const AddressTabsSearch = () => {
       {
         id: 4,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hohoankiem.jpg",
@@ -45,6 +49,7 @@ const AddressTabsSearch = () => {
       {
         id: 5,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom.jpg",
@@ -54,6 +59,7 @@ const AddressTabsSearch = () => {
       {
         id: 6,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom1.jpg",
@@ -62,6 +68,7 @@ const AddressTabsSearch = () => {
       {
         id: 7,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom.jpg",
@@ -70,6 +77,7 @@ const AddressTabsSearch = () => {
       {
         id: 8,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong.jpg",
@@ -78,6 +86,7 @@ const AddressTabsSearch = () => {
       {
         id: 9,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong1.jpg",
@@ -87,6 +96,7 @@ const AddressTabsSearch = () => {
       {
         id: 10,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong2.jpg",
@@ -95,6 +105,7 @@ const AddressTabsSearch = () => {
       {
         id: 11,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong4.jpg",
@@ -103,6 +114,7 @@ const AddressTabsSearch = () => {
       {
         id: 12,
         name: "Bản Ý - Linh Hồ",
+        slug: "ban-y-linh-ho",
         address: "Sapa",
         category: "sapa",
         image: "/places/sapa2.jpg",
@@ -111,6 +123,7 @@ const AddressTabsSearch = () => {
       {
         id: 12,
         name: "Thung lũng Mường Hoa - Sapa",
+        slug: "thung-lung-muong-hoa-sapa",
         address: "Sapa",
         category: "sapa",
         image: "/places/ruongbacthang5.jpg",
@@ -120,6 +133,7 @@ const AddressTabsSearch = () => {
       {
         id: 14,
         name: "Ruộng bậc thang",
+        slug: "ruong-bac-thang",
         address: "Sapa",
         category: "sapa",
         image: "/places/ruongbacthang1.jpg",
@@ -130,6 +144,7 @@ const AddressTabsSearch = () => {
       {
         id: 1,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hohoankiem.jpg",
@@ -138,6 +153,7 @@ const AddressTabsSearch = () => {
       {
         id: 2,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom.jpg",
@@ -147,6 +163,7 @@ const AddressTabsSearch = () => {
       {
         id: 3,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom1.jpg",
@@ -155,6 +172,7 @@ const AddressTabsSearch = () => {
       {
         id: 4,
         name: "Hồ Hoàn Kiếm - Hà Nội",
+        slug: "ho-hoan-kiem-ha-noi",
         address: "Hà Nội",
         category: "hanoi",
         image: "/places/hoguom.jpg",
@@ -165,6 +183,7 @@ const AddressTabsSearch = () => {
       {
         id: 1,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong.jpg",
@@ -173,6 +192,7 @@ const AddressTabsSearch = () => {
       {
         id: 2,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong1.jpg",
@@ -182,6 +202,7 @@ const AddressTabsSearch = () => {
       {
         id: 3,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong2.jpg",
@@ -190,6 +211,7 @@ const AddressTabsSearch = () => {
       {
         id: 4,
         name: "Vịnh Lan Hạ - Hạ Long Bay",
+        slug: "vinh-lan-ha-ha-long-bay",
         address: "Hải Phòng",
         category: "haiphong",
         image: "/places/halong4.jpg",
@@ -200,6 +222,7 @@ const AddressTabsSearch = () => {
       {
         id: 1,
         name: "Bản Ý - Linh Hồ",
+        slug: "ban-y-linh-ho",
         address: "Sapa",
         category: "sapa",
         image: "/places/sapa2.jpg",
@@ -208,6 +231,7 @@ const AddressTabsSearch = () => {
       {
         id: 2,
         name: "Thung lũng Mường Hoa - Sapa",
+        slug: "thung-lung-muong-hoa-sapa",
         address: "Sapa",
         category: "sapa",
         image: "/places/ruongbacthang5.jpg",
@@ -217,6 +241,7 @@ const AddressTabsSearch = () => {
       {
         id: 3,
         name: "Ruộng bậc thang",
+        slug: "ruong-bac-thang",
         address: "Sapa",
         category: "sapa",
         image: "/places/ruongbacthang1.jpg",
@@ -227,6 +252,7 @@ const AddressTabsSearch = () => {
       {
         id: 1,
         name: "Chùa Bái Đính",
+        slug: "chua-bai-dinh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh1.jpg",
@@ -235,6 +261,7 @@ const AddressTabsSearch = () => {
       {
         id: 2,
         name: "Tam Cốc - Bích Động - Ninh Bình",
+        slug: "tam-coc-bich-dong-ninh-binh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh2.jpeg",
@@ -244,6 +271,7 @@ const AddressTabsSearch = () => {
       {
         id: 3,
         name: "Tràng An - Bái Đính",
+        slug: "trang-an-bai-dinh",
         address: "Ninh Bình",
         category: "ninhbinh",
         image: "/places/ninhbinh3.jpg",
@@ -297,14 +325,14 @@ const AddressTabsSearch = () => {
                                className="w-full h-full object-cover group-hover:scale-[1.2] transition-all duration-300"/>
                       </div>
                       <div className="flex flex-col gap-[10px] w-full">
-                        <Link href="#"
+                        <Link href={`address/${filter.slug}`}
                               className="text-2xl w-full text-darkCharcoal text-left font-bold line-clamp-1">{filter.name}</Link>
                         <div className="flex items-center gap-[6px] text-sm text-[#555]">
                           <MdOutlineLocationOn size={18} color="#555"/>
                           <p>{filter.address}</p>
                         </div>
                         <p className="text-[#555555] text-sm text-left line-clamp-3 mb-[20px] ">{filter.description}</p>
-                        <Link href="#"
+                        <Link href={`address/${filter.slug}`}
                               className="text-primary text-base text-right flex items-center gap-[5px] justify-end">Xem
                           chi tiết<BsArrowRightShort size={20} color={"#4366c5"}/></Link>
                       </div>

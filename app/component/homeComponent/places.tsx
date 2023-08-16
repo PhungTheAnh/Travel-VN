@@ -8,11 +8,56 @@ import {BsArrowRight} from "react-icons/bs";
 import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
 import Link from "next/link";
+import {v4 as uuidv4} from 'uuid';
 
 const Places = (props: any) => {
   const placeMainRef = useRef<HTMLInputElement | null>(null);
   const placeTitleRef = useRef<HTMLInputElement | null>(null);
-
+  const places = [
+    {
+      name: "Hồ Hoàn Kiếm",
+      slug: "ho-hoan-kiem",
+      address: "Hà Nội",
+      image: "/places/hohoankiem.jpg"
+    },
+    {
+      name: "Chùa Bái Đính",
+      slug: "chua-bai-dinh",
+      address: "Ninh Bình",
+      image: "/places/ninhbinh.jpg"
+    },
+    {
+      name: "Hạ Long Bay",
+      slug: "ha-long-bay",
+      address: "Hải Phòng",
+      image: "/places/halong.jpg"
+    },
+    {
+      name: "Vịnh Lan Hạ",
+      slug: "vinh-lan-ha",
+      address: "Hải Phòng",
+      image: "/places/halong1.jpg"
+    },
+    {
+      name: "Bản ý - Linh Hồ",
+      slug: "ban-y-linh-ho",
+      address: "Sapa",
+      image: "/places/sapa2.jpg"
+    },
+    {
+      name: "Thung lũng Mường Hoa - Sapa",
+      slug: "thung-lung-muong-hoa-sapa",
+      address: "Sapa",
+      image: "/places/ruongbacthang5.jpg",
+    },
+    {
+      name: "Ruộng bậc thang",
+      slug: "ruong-bac-thang",
+      address: "Sapa",
+      image: "/places/ruongbacthang1.jpg",
+    },
+  ]
+  console.log()
   useEffect(() => {
     const onScroll: EventListener = () => {
       scrollEffect(placeTitleRef, "title-active")
@@ -37,13 +82,15 @@ const Places = (props: any) => {
            className="places translate-y-[160px] opacity-0 transition-all duration-[800ms] w-full grid grid-cols-1 grid-rows-5 md:grid-rows-3 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-rows-2 gap-[15px] rounded-xl overflow-hidden">
         {/**/}
         <div
-          className="group md:col-span-2 xl:row-span-2 w-full bg-[url('/places/hohoankiem.jpg')] bg-cover rounded-xl relative">
+          className="group md:col-span-2 xl:row-span-2 w-full bg-cover rounded-xl relative"
+          style={{"backgroundImage": `url("${places[0].image}")`}}>
           <div className="w-full absolute bottom-0 left-0">
             <div className="p-3 flex flex-col gap-[5px]">
-              <p className="text-white text-sm md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p>
+              <Link href={`/address/${places[0].slug}`}
+                    className="text-white text-sm md:text-base xl:text-[20px] font-semibold">{places[0].name}</Link>
               <div className="flex gap-[5px] items-center">
                 <IoLocationOutline color={"white"} size={18}/>
-                <p className="text-xs md:text-sm xl:text-base text-white">Hà Nội</p>
+                <p className="text-xs md:text-sm xl:text-base text-white">{places[0].address}</p>
               </div>
             </div>
             {/**/}
@@ -60,199 +107,52 @@ const Places = (props: any) => {
                 </div>
               </div>
               <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
+                <Link href={`/address/${places[0].slug}`} className="text-white text-sm">Xem chi tiết</Link>
                 <BsArrowRight color={"white"}/>
               </div>
             </div>
           </div>
         </div>
         {/**/}
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
-                </div>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
+        {
+          places.slice(1, 7).map((place: any) => {
+            return (
+              <div
+                key={uuidv4()}
+                className='group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-cover rounded-xl relative'
+                style={{"backgroundImage": `url("${place.image}")`}}>
+                <div className="w-full absolute bottom-0 left-0">
+                  <div className="p-3 flex flex-col gap-[5px]">
+                    <Link className="cursor-pointer" href={`/address/${place.slug}`}><p
+                      className="text-white md:text-base xl:text-[20px] font-semibold">{place.name}</p></Link>
+                    <div className="flex gap-[5px] items-center">
+                      <IoLocationOutline color={"white"} size={18}/>
+                      <p className="md:text-sm xl:text-base text-white">{place.address}</p>
+                    </div>
+                  </div>
+                  {/**/}
+                  <div
+                    className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
+                    <div className="flex gap-[20px]">
+                      <div className="flex gap-[5px] items-center">
+                        <FaEye className="cursor-pointer" color={"white"} size={18}/>
+                        <p className="text-white text-sm">21</p>
+                      </div>
+                      <div className="flex gap-[5px] items-center">
+                        <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
+                        <p className="text-white text-sm">10</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-[10px] items-center cursor-pointer">
+                      <Link href={`/address/${place.slug}`} className="text-white text-sm">Xem chi tiết</Link>
+                      <BsArrowRight color={"white"}/>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
-                </div>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
-                </div>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
-                </div>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="group w-full h-[300px] md:h-[230px] xl:h-[230px] bg-[url('/places/ninhbinh.jpg')] bg-cover rounded-xl relative">
-          <div className="w-full absolute bottom-0 left-0">
-            <div className="p-3 flex flex-col gap-[5px]">
-              <Link className="cursor-pointer" href="#"><p
-                className="text-white md:text-base xl:text-[20px] font-semibold">Hồ Hoàn Kiếm</p></Link>
-              <div className="flex gap-[5px] items-center">
-                <IoLocationOutline color={"white"} size={18}/>
-                <p className="md:text-sm xl:text-base text-white">Hà Nội</p>
-              </div>
-            </div>
-            {/**/}
-            <div
-              className="group-hover:opacity-100 group-hover:py-5 transition-all duration-300 py-0 opacity-0 bg-[#0000004d] px-3 flex justify-between rounded-bl-xl rounded-br-xl">
-              <div className="flex gap-[20px]">
-                <div className="flex gap-[5px] items-center">
-                  <FaEye className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">21</p>
-                </div>
-                <div className="flex gap-[5px] items-center">
-                  <IoIosShareAlt className="cursor-pointer" color={"white"} size={18}/>
-                  <p className="text-white text-sm">10</p>
-                </div>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <p className="text-white text-sm">Xem chi tiết</p>
-                <BsArrowRight color={"white"}/>
-              </div>
-            </div>
-          </div>
-        </div>
+            )
+          })
+        }
       </div>
     </div>
 

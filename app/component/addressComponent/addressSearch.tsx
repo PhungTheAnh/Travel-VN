@@ -5,12 +5,6 @@ import scrollEffect from "@/app/component/function/scrollEffect";
 import AddressTabsSearch from "@/app/component/addressComponent/addressTabsSearch";
 
 const AddressSearch = () => {
-  useEffect(() => {
-    const onScroll: EventListener = () => {
-
-    }
-    window.addEventListener("scroll", onScroll)
-  }, [])
   return (
     <div className="w-full relative py-[30px] bg-[#fafafa]">
       <div className="w-[95%] 2xl:w-[85%] mx-auto text-center">

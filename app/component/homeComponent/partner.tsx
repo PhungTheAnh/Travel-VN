@@ -51,8 +51,7 @@ const Partner = () => {
       className=" mt-[30px] md:mt-[50px] lg:mt-[80px] flex flex-col items-center justify-center w-[96%] lg:w-[90%] xl:w-[80%] mx-auto">
       <div ref={partnerTitleRef}
            className={"place-title translate-y-[-160px] opacity-0 transition-all duration-[800ms]"}>
-        <p className={"text-[#231d0d] text-[32px] md:text-[45px] font-bold leading-[45px] text-center"}>Địa điểm phổ
-          biến</p>
+        <p className={"text-[#231d0d] text-[32px] md:text-[45px] font-bold leading-[45px] text-center"}>Đối tác của chúng tôi</p>
         <div
           className="flex gap-[10px] items-center justify-center mt-[15px] mb-[20px] md:mb-[30px] lg:mb-[50px] cursor-pointer">
           <p className="text-primary text-base">Xem tất cả</p>

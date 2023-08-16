@@ -424,7 +424,9 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.25s linear;
 }
 
-.posts_page .postReadMore .content .active, .posts_page .tagReadMore .content .active, .posts_page .imgReadMore .content .active {
+.posts_page .postReadMore .content .active, .posts_page .tagReadMore .content .active, .posts_page .imgReadMore .content .active,
+.addressDetail_page .postReadMore .content .active, .addressDetail_page .tagReadMore .content .active, .addressDetail_page .imgReadMore .content .active,
+.postDetail_page .postReadMore .content .active, .postDetail_page .tagReadMore .content .active, .postDetail_page .imgReadMore .content .active{
     height: 100%;
     opacity: 1;
     visibility: visible;
