@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import scrollEffect from "@/app/component/function/scrollEffect";
 
 const Evaluate = () => {
-  const evaluateTitleRef = useRef<HTMLInputElement | null>(null)
-  const evaluateSlideRef = useRef<HTMLInputElement | null>(null)
+  const evaluateTitleRef = useRef<any | null>(null)
+  const evaluateSlideRef = useRef<any | null>(null)
   useEffect(()=>{
 
     let callback = (entries: any, observer: any) => {
@@ -20,7 +20,6 @@ const Evaluate = () => {
       });
     };
     const observer = new IntersectionObserver(callback);
-    // @ts-ignore
     observer.observe(evaluateTitleRef.current);
     // const onScroll = (e: any) => {
     //   // @ts-ignore

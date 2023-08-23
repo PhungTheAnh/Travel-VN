@@ -398,13 +398,13 @@ body::-webkit-scrollbar-thumb {
 
 /*posts_page*/
 
-.posts_page .btn_share .share {
+.posts_page .btn_share .share, .postDetail_page .btn_share .share{
     opacity: 0;
     visibility: hidden;
     transform: rotateX(90deg);
 }
 
-.posts_page .btn_share:hover .share {
+.posts_page .btn_share:hover .share, .postDetail_page .btn_share:hover .share {
     opacity: 1;
     overflow: hidden;
     visibility: visible;

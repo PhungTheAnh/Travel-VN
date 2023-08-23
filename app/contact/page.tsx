@@ -6,26 +6,10 @@ import Link from "next/link";
 import {FaPhoneVolume} from "react-icons/fa";
 import { v4 as uuidv4 } from 'uuid';
 import {Input, Textarea} from "@nextui-org/react";
+import {contacts} from "@/app/component/data/data";
 
 const Page = () => {
   const pageTitle = "Blog"
-  const contacts = [
-    {
-      phone: "0354 899 836",
-      title: "Yêu cầu đặt Tour",
-      description: "This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit"
-    },
-    {
-      phone: "0387 094 970",
-      title: "Đăng bài đăng",
-      description: "This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit"
-    },
-    {
-      phone: "0354 899 836",
-      title: "Kiểm tra thanh toán",
-      description: "This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit"
-    }
-  ]
   return (
     <div className="contact_page">
       <BannerPage pageTitle={pageTitle} pageSlogan="Thông tin hữu ích cho du lịch"

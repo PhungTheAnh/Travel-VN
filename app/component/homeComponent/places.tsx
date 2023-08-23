@@ -9,55 +9,11 @@ import scrollEffect from "@/app/component/function/scrollEffect";
 import {FiChevronRight} from "react-icons/fi";
 import Link from "next/link";
 import {v4 as uuidv4} from 'uuid';
+import {places} from "@/app/component/data/data";
 
 const Places = (props: any) => {
   const placeMainRef = useRef<HTMLInputElement | null>(null);
   const placeTitleRef = useRef<HTMLInputElement | null>(null);
-  const places = [
-    {
-      name: "Hồ Hoàn Kiếm",
-      slug: "ho-hoan-kiem",
-      address: "Hà Nội",
-      image: "/places/hohoankiem.jpg"
-    },
-    {
-      name: "Chùa Bái Đính",
-      slug: "chua-bai-dinh",
-      address: "Ninh Bình",
-      image: "/places/ninhbinh.jpg"
-    },
-    {
-      name: "Hạ Long Bay",
-      slug: "ha-long-bay",
-      address: "Hải Phòng",
-      image: "/places/halong.jpg"
-    },
-    {
-      name: "Vịnh Lan Hạ",
-      slug: "vinh-lan-ha",
-      address: "Hải Phòng",
-      image: "/places/halong1.jpg"
-    },
-    {
-      name: "Bản ý - Linh Hồ",
-      slug: "ban-y-linh-ho",
-      address: "Sapa",
-      image: "/places/sapa2.jpg"
-    },
-    {
-      name: "Thung lũng Mường Hoa - Sapa",
-      slug: "thung-lung-muong-hoa-sapa",
-      address: "Sapa",
-      image: "/places/ruongbacthang5.jpg",
-    },
-    {
-      name: "Ruộng bậc thang",
-      slug: "ruong-bac-thang",
-      address: "Sapa",
-      image: "/places/ruongbacthang1.jpg",
-    },
-  ]
-  console.log()
   useEffect(() => {
     const onScroll: EventListener = () => {
       scrollEffect(placeTitleRef, "title-active")

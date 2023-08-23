@@ -4,8 +4,11 @@ import React from 'react';
 import BannerPageDetail from "@/app/component/bannerPage/bannerPageDetail";
 import Image from "next/image";
 import SideBar from "@/app/component/SideBar/SideBar";
-
+import PostByDetail from "@/app/component/postsComponent/PostByDetail";
+import {postDetail} from '@/app/component/data/data'
+import Comments from "@/app/component/postsComponent/Comments";
 const Page = () => {
+
   const pageTitle = "Bài viết"
   return (
     <div className="postDetail_page"><BannerPageDetail pageTitle={pageTitle} pageSlogan="Điểm đến tốt nhất ở Việt Nam"
@@ -30,8 +33,9 @@ const Page = () => {
               các rạn san hô tuyệt đẹp ở Vịnh Bái Tử Long. Tại đây có rất nhiều rạn san hô lớn, nhiều màu sắc và có
               nhiều động vật nhỏ sinh sống. Nước biển cũng xanh trong nên rất thích hợp để lặn ngắm san hô. Đã tới Hạ
               Long, bạn không nên bỏ lỡ trải nghiệm thú vị này.</p>
-            <div className='w-full my-[30px] flex'>
-              <p>Đăng bởi <span>AnhPT</span></p>
+            <div className='my-[30px] flex flex-col gap-[30px]'>
+              <PostByDetail author={postDetail.author} comments={postDetail.cmt}/>
+              <Comments />
             </div>
           </div>
           <SideBar/>

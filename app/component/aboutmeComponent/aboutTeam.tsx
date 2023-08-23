@@ -3,6 +3,9 @@
 import React, {useEffect, useRef} from 'react';
 import Image from "next/image";
 import scrollEffect from "@/app/component/function/scrollEffect";
+import IconLeaf1 from "@/app/component/svg/IconLeaf1";
+import IconLeaf2 from "@/app/component/svg/IconLeaf2";
+import IconLeaf3 from "@/app/component/svg/IconLeaf3";
 
 const AboutTeam = () => {
   const titleServiceRef = useRef<HTMLInputElement | null>(null)
@@ -27,6 +30,15 @@ const AboutTeam = () => {
           </p>
           <div className="w-fit relative py-[15px] px-[45px] bg-[#4366c5] text-[17px] font-medium text-white border border-[#4366c5] rounded-xl cursor-pointer drop-shadow-[2px_2px_3px_rgba(0,0,0,.2)]">
             Gặp chúng tôi
+            <div className='absolute top-0 left-[0px] origin-[50%_0] animate-leaf1'>
+              <IconLeaf1 />
+            </div>
+            <div className='absolute top-0 left-[20px] origin-[50%_0] animate-leaf2'>
+              <IconLeaf2 />
+            </div>
+            <div className='absolute top-0 right-[5px] origin-[0_0] animate-leaf3'>
+              <IconLeaf3 />
+            </div>
           </div>
         </div>
         <div ref={mainServiceRef} className="w-full md:w-1/2 h-full overflow-hidden opacity-0 translate-x-[160px] transition-all duration-1000 rounded-xl">
