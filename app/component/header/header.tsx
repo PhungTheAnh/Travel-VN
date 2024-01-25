@@ -13,6 +13,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import tours from "@/app/component/homeComponent/tours";
+import {paths} from "@/app/component/router/path";
 
 
 const Header = () => {
@@ -117,12 +119,12 @@ const Header = () => {
                                 width={135}
                                 height={20}/></Link>
           <div className="flex flex-col gap-[30px] mt-[60px]">
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/" pageTitle="Trang chủ"/>
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/aboutme" pageTitle="Về chúng tôi"/>
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/address" pageTitle="Địa điểm"/>
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/tours" pageTitle="Tours"/>
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/posts" pageTitle="Bài viết"/>
-            <LinkHeaderMobile closeClick={MenuClose} pagePathName="/contact" pageTitle="Liên hệ"/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.home.index} pageTitle={paths.home.meta}/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.about.index} pageTitle={paths.about.meta}/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.address.index} pageTitle={paths.address.meta}/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.tours.index} pageTitle={paths.tours.meta}/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.posts.index} pageTitle={paths.posts.meta}/>
+            <LinkHeaderMobile closeClick={MenuClose} pagePathName={paths.contact.index} pageTitle={paths.contact.meta}/>
           </div>
         </div>
       </div>
