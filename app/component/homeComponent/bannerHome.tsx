@@ -27,7 +27,7 @@ const BannerHome = () => {
     const MouseLeave = (e: any) => {
       effect.forEach(el => {
         el.style.transform = `translate(-50%, -50%)`
-        el.style.transition = `all 0.3s ease-in-out`
+        el.style.transition = `all 1.5s ease-in-out`
       })
     }
     let callback = (entries: any, observer: any) => {
