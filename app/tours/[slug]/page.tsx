@@ -6,13 +6,13 @@ const Page = () => {
     return (
         <div className="w-full h-full min-h-screen relative flex flex-col xl:flex-row items-center">
             <div className="w-full xl:w-1/2 xl:fixed h-full top-0 left-0 -z-[1]">
-                <Image src={"/tours/nhatrang4.jpg"} alt={""} width={0} height={0} sizes={"100%"} unoptimized className="w-full h-full object-cover" />
+                <Image src={"/tours/nhatrang4.jpg"} alt={""} width={0} height={0} sizes={"100%"} className="w-full h-full object-cover" />
             </div>
             <div className="w-full xl:w-1/2 xl:absolute right-0 top-0 h-full bg-[#fafafa]">
                 <div className="w-[80%] mx-auto my-8 xl:my-0 h-full flex items-center justify-center flex-col">
                     <h1 className="text-[#5c5e62] text-3xl font-semibold mb-8">Tour Biển Nha Trang</h1>
                     <p className="text-[#1f2933] text-base ">Chỉ từ</p>
-                    <div className="my-7 flex gap-1">
+                    <div className="my-7 flex gap-2">
                         <p className="text-lg text-[#adadad] font-bold line-through">6,000,000 <span
                             className="underline">đ</span>
                         </p>

@@ -61,7 +61,6 @@ export const posts = [
   }
 ]
 
-
 export const postDetail = {
   id: 1,
   title: "Biển Nha Trang đẹp nhất khi đi vào tháng 7 và 8",
@@ -936,3 +935,4 @@ export const comments = [
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore, cupiditate quaerat soluta, nemo illum quibusdam esse laboriosam ducimus aut culpa dolor ex, iste excepturi nulla praesentium maxime tenetur autem."
   }
 ]
+

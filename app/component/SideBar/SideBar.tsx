@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {AiOutlineRight} from "react-icons/ai";
 import {FaSnowboarding} from "react-icons/fa";
+import {posts} from "@/app/component/data/data";
 
 const SideBar = () => {
   const postRef = useRef<HTMLInputElement | null>(null)
@@ -25,62 +26,6 @@ const SideBar = () => {
     imgRef.current?.classList.toggle("active")
     imgMoreRef.current?.classList.toggle("active")
   }
-  const posts = [
-    {
-      id: 1,
-      title: "Biển Nha Trang đẹp nhất khi đi vào tháng 7 và 8",
-      author: "Thế Anh",
-      image: "/posts/nhatrang4.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    },
-    {
-      id: 2,
-      title: "Ghẹ biển Quất Lâm rất ngon",
-      author: "Thế Anh",
-      image: "/posts/nhatrang3.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    },
-    {
-      id: 3,
-      title: "Biển Sầm Sơn đẹp nhất khi đi vào tháng 7 và 8",
-      author: "Thế Anh",
-      image: "/posts/ninhbinh2.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    },
-    {
-      id: 4,
-      title: "Ghẹ biển Quất Lâm rất ngon",
-      author: "Thế Anh",
-      image: "/posts/phocohoian4.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    },
-    {
-      id: 5,
-      title: "Ghẹ biển Quất Lâm rất ngon",
-      author: "Thế Anh",
-      image: "/posts/phocohoian4.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    },
-    {
-      id: 6,
-      title: "Ghẹ biển Quất Lâm rất ngon",
-      author: "Thế Anh",
-      image: "/posts/phocohoian4.jpg",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",
-      cmt: 20,
-      createAt: "05/10/2022"
-    }
-  ]
   const tags = [
     {
       id: 1,
