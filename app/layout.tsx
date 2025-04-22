@@ -26,10 +26,6 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <Analytics />
-        </head>
-</script>
-
-{/* End Google Tag Manager */}
       </head>
       <body
         className={
