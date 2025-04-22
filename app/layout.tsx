@@ -33,20 +33,19 @@ export default function RootLayout({
           ' mx-auto min-h-screen flex flex-col justify-between'
         }
       >
+        {/* NOSCRIPT cho GTM */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFQH3LBN"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            `,
+          }}
+        />
         <Header />
         {children}
         <Footer />
       </body>
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-TFQH3LBN'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
-        ></iframe>
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
     </html>
   );
 }
