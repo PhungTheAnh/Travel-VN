@@ -12,6 +12,9 @@ export const metadata = {
   description: 'Travel VN by TheAnh',
   name: 'google-site-verification',
   content: 'eYkQszMmKVo_XuRe-yltvEpS3VPXb2OdOhbiVADJRJM',
+  other: {
+    'google-site-verification': 'TL6vqFp2MWsd8vkxpA04EJjdU2XOwnZ11y1LD3dVx1A',
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-     <Analytics />
+      <head>
+        <Analytics />
+        </head>
+</script>
+
+{/* End Google Tag Manager */}
+      </head>
       <body
         className={
           inter.className +
@@ -32,6 +41,16 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src='https://www.googletagmanager.com/ns.html?id=GTM-TFQH3LBN'
+          height='0'
+          width='0'
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
+      {/* End Google Tag Manager (noscript) */}
     </html>
   );
 }
