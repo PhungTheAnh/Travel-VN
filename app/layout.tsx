@@ -2,6 +2,8 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import Header from '@/app/component/header/header';
 import Footer from '@/app/component/footer/footer';
+import Script from 'next/script';
+import Analytics from './component/Analytics/Analytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+     <Analytics />
       <body
         className={
           inter.className +
