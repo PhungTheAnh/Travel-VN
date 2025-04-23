@@ -8,8 +8,8 @@ import Analytics from './component/Analytics/Analytics';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Travel VN',
-  description: 'Travel VN by TheAnh',
+  title: 'Travel VN - The Anh 21',
+  description: 'Travel VN by The Anh',
   name: 'google-site-verification',
   content: 'eYkQszMmKVo_XuRe-yltvEpS3VPXb2OdOhbiVADJRJM',
   other: {
