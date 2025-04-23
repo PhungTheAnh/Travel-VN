@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Travel VN - The Anh 21',
-  description: 'Khám phá Việt Nam cùng Travel VN của Thế Anh.',
+  description:
+    'Lên đường khám phá cảnh đẹp Việt Nam, lên kế hoạch tour, săn ưu đãi và lưu lại những trải nghiệm không thể quên cùng Travel VN.',
   verification: {
     google: 'TL6vqFp2MWsd8vkxpA04EJjdU2XOwnZ11y1LD3dVx1A',
   },
@@ -20,7 +21,8 @@ export const metadata = {
   },
   openGraph: {
     title: 'Travel VN - The Anh 21',
-    description: 'Khám phá những điểm đến đẹp nhất tại Việt Nam.',
+    description:
+      'Lên đường khám phá cảnh đẹp Việt Nam, lên kế hoạch tour, săn ưu đãi và lưu lại những trải nghiệm không thể quên cùng Travel VN.',
     url: 'https://travel-vn.vercel.app',
     siteName: 'Travel VN',
     locale: 'vi_VN',
