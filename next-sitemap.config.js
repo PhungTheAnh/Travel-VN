@@ -6,4 +6,5 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 5000, // Nếu ít page vẫn cần để tách file con
   exclude: [], // đừng loại trừ route nào trừ khi thật sự cần
+  outDir: './public', // hoặc './out' nếu dùng export
 };
