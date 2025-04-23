@@ -4,6 +4,7 @@ import Header from '@/app/component/header/header';
 import Footer from '@/app/component/footer/footer';
 import Script from 'next/script';
 import Analytics from './component/Analytics/Analytics';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,8 +26,6 @@ export const metadata = {
     locale: 'vi_VN',
     type: 'website',
   },
-  // name: 'google-site-verification',
-  // content: 'eYkQszMmKVo_XuRe-yltvEpS3VPXb2OdOhbiVADJRJM',
 };
 
 export default function RootLayout({
@@ -36,9 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head>
+      <Head>
         <Analytics />
-      </head>
+      </Head>
       <body
         className={
           inter.className +
