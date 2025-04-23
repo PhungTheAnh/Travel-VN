@@ -9,12 +9,24 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Travel VN - The Anh 21',
-  description: 'Travel VN by The Anh',
-  name: 'google-site-verification',
-  content: 'eYkQszMmKVo_XuRe-yltvEpS3VPXb2OdOhbiVADJRJM',
-  other: {
-    'google-site-verification': 'TL6vqFp2MWsd8vkxpA04EJjdU2XOwnZ11y1LD3dVx1A',
+  description: 'Khám phá Việt Nam cùng Travel VN của Thế Anh.',
+  verification: {
+    google: 'TL6vqFp2MWsd8vkxpA04EJjdU2XOwnZ11y1LD3dVx1A',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Travel VN - The Anh 21',
+    description: 'Khám phá những điểm đến đẹp nhất tại Việt Nam.',
+    url: 'https://travel-vn.vercel.app',
+    siteName: 'Travel VN',
+    locale: 'vi_VN',
+    type: 'website',
+  },
+  // name: 'google-site-verification',
+  // content: 'eYkQszMmKVo_XuRe-yltvEpS3VPXb2OdOhbiVADJRJM',
 };
 
 export default function RootLayout({
